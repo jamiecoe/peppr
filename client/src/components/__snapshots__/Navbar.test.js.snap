@@ -1,0 +1,640 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Navbar
+    page=""
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ul>
+        <li
+                className="navbar__homelogo"
+        >
+                <Link
+                        replace={false}
+                        to="/recipes"
+                >
+                        PEPPR
+                </Link>
+        </li>
+        <li
+                className="navbar__link"
+        >
+                <Link
+                        replace={false}
+                        to="/recipes"
+                >
+                        <i
+                                className="ion-ios-nutrition-outline navbar__icon"
+                        />
+                        Recipes
+                </Link>
+        </li>
+        <li
+                className="navbar__link"
+        >
+                <Link
+                        replace={false}
+                        to="/addrecipe"
+                >
+                        <i
+                                className="ion-ios-plus-outline navbar__icon"
+                        />
+                        Add
+                </Link>
+        </li>
+        <li
+                className="navbar__link"
+        >
+                <Link
+                        onClick={[Function]}
+                        replace={false}
+                        to="/"
+                >
+                        <i
+                                className="ion-ios-undo-outline navbar__icon"
+                        />
+                        Log out
+                </Link>
+        </li>
+</ul>,
+      "className": "navbar",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <li
+            className="navbar__homelogo"
+>
+            <Link
+                        replace={false}
+                        to="/recipes"
+            >
+                        PEPPR
+            </Link>
+</li>,
+          <li
+            className="navbar__link"
+>
+            <Link
+                        replace={false}
+                        to="/recipes"
+            >
+                        <i
+                                    className="ion-ios-nutrition-outline navbar__icon"
+                        />
+                        Recipes
+            </Link>
+</li>,
+          <li
+            className="navbar__link"
+>
+            <Link
+                        replace={false}
+                        to="/addrecipe"
+            >
+                        <i
+                                    className="ion-ios-plus-outline navbar__icon"
+                        />
+                        Add
+            </Link>
+</li>,
+          <li
+            className="navbar__link"
+>
+            <Link
+                        onClick={[Function]}
+                        replace={false}
+                        to="/"
+            >
+                        <i
+                                    className="ion-ios-undo-outline navbar__icon"
+                        />
+                        Log out
+            </Link>
+</li>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/recipes"
+>
+              PEPPR
+</Link>,
+            "className": "navbar__homelogo",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "PEPPR",
+              "replace": false,
+              "to": "/recipes",
+            },
+            "ref": null,
+            "rendered": "PEPPR",
+            "type": [Function],
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/recipes"
+>
+              <i
+                            className="ion-ios-nutrition-outline navbar__icon"
+              />
+              Recipes
+</Link>,
+            "className": "navbar__link",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="ion-ios-nutrition-outline navbar__icon"
+/>,
+                "Recipes",
+              ],
+              "replace": false,
+              "to": "/recipes",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "ion-ios-nutrition-outline navbar__icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "Recipes",
+            ],
+            "type": [Function],
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/addrecipe"
+>
+              <i
+                            className="ion-ios-plus-outline navbar__icon"
+              />
+              Add
+</Link>,
+            "className": "navbar__link",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="ion-ios-plus-outline navbar__icon"
+/>,
+                "Add",
+              ],
+              "replace": false,
+              "to": "/addrecipe",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "ion-ios-plus-outline navbar__icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "Add",
+            ],
+            "type": [Function],
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              onClick={[Function]}
+              replace={false}
+              to="/"
+>
+              <i
+                            className="ion-ios-undo-outline navbar__icon"
+              />
+              Log out
+</Link>,
+            "className": "navbar__link",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="ion-ios-undo-outline navbar__icon"
+/>,
+                "Log out",
+              ],
+              "onClick": [Function],
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "ion-ios-undo-outline navbar__icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "Log out",
+            ],
+            "type": [Function],
+          },
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul>
+          <li
+                    className="navbar__homelogo"
+          >
+                    <Link
+                              replace={false}
+                              to="/recipes"
+                    >
+                              PEPPR
+                    </Link>
+          </li>
+          <li
+                    className="navbar__link"
+          >
+                    <Link
+                              replace={false}
+                              to="/recipes"
+                    >
+                              <i
+                                        className="ion-ios-nutrition-outline navbar__icon"
+                              />
+                              Recipes
+                    </Link>
+          </li>
+          <li
+                    className="navbar__link"
+          >
+                    <Link
+                              replace={false}
+                              to="/addrecipe"
+                    >
+                              <i
+                                        className="ion-ios-plus-outline navbar__icon"
+                              />
+                              Add
+                    </Link>
+          </li>
+          <li
+                    className="navbar__link"
+          >
+                    <Link
+                              onClick={[Function]}
+                              replace={false}
+                              to="/"
+                    >
+                              <i
+                                        className="ion-ios-undo-outline navbar__icon"
+                              />
+                              Log out
+                    </Link>
+          </li>
+</ul>,
+        "className": "navbar",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="navbar__homelogo"
+>
+              <Link
+                            replace={false}
+                            to="/recipes"
+              >
+                            PEPPR
+              </Link>
+</li>,
+            <li
+              className="navbar__link"
+>
+              <Link
+                            replace={false}
+                            to="/recipes"
+              >
+                            <i
+                                          className="ion-ios-nutrition-outline navbar__icon"
+                            />
+                            Recipes
+              </Link>
+</li>,
+            <li
+              className="navbar__link"
+>
+              <Link
+                            replace={false}
+                            to="/addrecipe"
+              >
+                            <i
+                                          className="ion-ios-plus-outline navbar__icon"
+                            />
+                            Add
+              </Link>
+</li>,
+            <li
+              className="navbar__link"
+>
+              <Link
+                            onClick={[Function]}
+                            replace={false}
+                            to="/"
+              >
+                            <i
+                                          className="ion-ios-undo-outline navbar__icon"
+                            />
+                            Log out
+              </Link>
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/recipes"
+>
+                PEPPR
+</Link>,
+              "className": "navbar__homelogo",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "PEPPR",
+                "replace": false,
+                "to": "/recipes",
+              },
+              "ref": null,
+              "rendered": "PEPPR",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/recipes"
+>
+                <i
+                                className="ion-ios-nutrition-outline navbar__icon"
+                />
+                Recipes
+</Link>,
+              "className": "navbar__link",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="ion-ios-nutrition-outline navbar__icon"
+/>,
+                  "Recipes",
+                ],
+                "replace": false,
+                "to": "/recipes",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "ion-ios-nutrition-outline navbar__icon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "Recipes",
+              ],
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/addrecipe"
+>
+                <i
+                                className="ion-ios-plus-outline navbar__icon"
+                />
+                Add
+</Link>,
+              "className": "navbar__link",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="ion-ios-plus-outline navbar__icon"
+/>,
+                  "Add",
+                ],
+                "replace": false,
+                "to": "/addrecipe",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "ion-ios-plus-outline navbar__icon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "Add",
+              ],
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                onClick={[Function]}
+                replace={false}
+                to="/"
+>
+                <i
+                                className="ion-ios-undo-outline navbar__icon"
+                />
+                Log out
+</Link>,
+              "className": "navbar__link",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="ion-ios-undo-outline navbar__icon"
+/>,
+                  "Log out",
+                ],
+                "onClick": [Function],
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "ion-ios-undo-outline navbar__icon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "Log out",
+              ],
+              "type": [Function],
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      "type": "nav",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

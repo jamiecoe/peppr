@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { logoutUser } from '../actions/auth';
 import { connect } from 'react-redux';
 
-class Navbar extends Component {
+export class Navbar extends Component {
   render() {
     
     let className = "";
