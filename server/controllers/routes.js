@@ -12,7 +12,7 @@ router.post('/signin', requireSignin, signIn);
 router.post('/signup', signUp);
 router.get('/getuser', requireAuth, getUser);
 
-router.post('/urlscraper', urlScraper);
+router.post('/urlscraper', requireAuth, urlScraper);
 router.post('/addnewrecipe', requireAuth, addRecipe);
 router.get('/getrecipes', requireAuth, getRecipes);
 router.get('/getsinglerecipe/:id', requireAuth, getSingleRecipe);

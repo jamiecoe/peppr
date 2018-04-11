@@ -6,7 +6,7 @@ const dbBuild = require('../../database/db_build');
 const urlScraper = () => {
   test('Routes: test for urlScraper route', t => {
 
-    const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTUxNjI2OTY3NzgzMn0.zuVeFStyNFLJDo-Qw4g3YRTwqR6xhlipfQCMRdL1BJE";
+    const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTUxNjI2OTY3NzgzMn0.p6Bm9de8GL4TprpfXiZRc_Ox-2XxJW8D_FUWCC4H0F4";
 
     const goodurl = {
       "url":

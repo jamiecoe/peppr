@@ -4,13 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "postinstall": "cd client && npm install",
         "start": "node ./server/server.js",
-        "test": "NODE_ENV=test tape ./server/tests/*.test.js | tap-spec",
-        "client-test": "cd client && npm test",
-        "local-test": "concurrently \"npm run test\" \"npm run client-test\"",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
         "client": "node start-client.js",
         "server": "nodemon ./server/server.js",
-        "dev": "concurrently \"npm run server\" \"npm run client\""
+        "test": "concurrently \"npm run server:test\" \"npm run client:test\"",
+        "server:test": "NODE_ENV=test tape ./server/tests/*.test.js | tap-spec",
+        "client:test": "cd client && npm test"
     },
     "repository": {
         "type": "git",

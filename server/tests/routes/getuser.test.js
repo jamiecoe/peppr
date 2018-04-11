@@ -5,19 +5,19 @@ const dbBuild = require('../../database/db_build');
 
 const getUserTest = () => {
   test('Routes: test for getuser route', t => {
-    const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjJ9.HMoOEdhfc2lPj11Y_Tu7_4BcvL4g263YLlhXMSYj7FA"
+    const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTUxNjI2OTY3NzgzMn0.p6Bm9de8GL4TprpfXiZRc_Ox-2XxJW8D_FUWCC4H0F4";
     dbBuild(() => {
       request(app)
         .get('/getuser')
         .set('authorization', token)
         .end((err, res) => {
-          t.error(err);
+          t.error(err, 'err object should be null');
           t.equal(res.status, 200, 'request with valid token should generate 200 response');
 
         request(app)
           .get('/getuser')
           .end((err, res) => {
-            t.error(err);
+            t.error(err, 'err object should be null');
             t.equal(res.status, 401, 'request without token should return a 401 response');
             t.end();
           });
