@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Navbar
-    page=""
+    page="singleRecipe"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -71,7 +71,7 @@ ShallowWrapper {
                 </Link>
         </li>
 </ul>,
-      "className": "navbar",
+      "className": "navbar navbar-mobile-hidden",
     },
     "ref": null,
     "rendered": Object {
@@ -378,7 +378,7 @@ ShallowWrapper {
                     </Link>
           </li>
 </ul>,
-        "className": "navbar",
+        "className": "navbar navbar-mobile-hidden",
       },
       "ref": null,
       "rendered": Object {

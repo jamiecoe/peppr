@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Banner extends Component {
-  render() {
-    return(
-    <div className='mobileBanner'>      
-      <h2 className='mobileBanner__title'>{this.props.title}</h2>
-    </div>
-  )}
-}
+const Banner = props => (
+  <div className="mobileBanner">
+    <h2 className="mobileBanner__title">{props.title}</h2>
+  </div>
+);
 
 export default Banner;

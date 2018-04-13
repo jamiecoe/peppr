@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
 import _ from 'lodash';
 
 import { getRecipes } from '../../actions/recipes';
@@ -9,27 +9,25 @@ import NoRecipes from './NoRecipes';
 import Banner from '../MobileBanner';
 
 class Recipes extends Component {
+  componentDidMount() {
+    this.props.getRecipes();
+  }
+
   render() {
     const { recipes } = this.props;
 
-    if(!recipes) return <Navbar />
+    if (!recipes) return <Navbar />;
 
     return (
-      <div>        
-        <Banner title={"My recipes"}/>
-        { _.isEmpty(recipes) ? <NoRecipes/> : <RecipeList /> }
+      <div>
+        <Banner title="My recipes" />
+        {_.isEmpty(recipes) ? <NoRecipes /> : <RecipeList />}
         <Navbar />
       </div>
     );
   }
-
-  componentDidMount() {
-    this.props.getRecipes();
-  }
 }
 
-const mapStateToProps = ({ recipes }) => {
-  return { recipes };
-}
+const mapStateToProps = ({ recipes }) => ({ recipes });
 
 export default connect(mapStateToProps, { getRecipes })(Recipes);

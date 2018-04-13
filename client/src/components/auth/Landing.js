@@ -7,10 +7,20 @@ import SignUp from './Signup';
 import SignIn from './Signin';
 
 class Landing extends Component {
+  componentDidMount() {
+    this.props.resetError();
+  }
+
+  renderForm() {
+    return (
+      this.props.match.path === '/' ? <SignIn /> : <SignUp />
+    );
+  }
+
   render() {
     return (
       <div>
-        <img className="landing__image" alt="red peppers on a dark background" src={peppers}/>
+        <img className="landing__image" alt="red peppers on a dark background" src={peppers} />
         <div className="landing__container">
           <h1 className="landing__header">PEPPR</h1>
           <p className="landing__tagline">All your recipes in one place</p>
@@ -19,17 +29,7 @@ class Landing extends Component {
       </div>
     );
   }
-
-  renderForm(){
-    return (
-      this.props.match.path === '/' ? <SignIn /> : <SignUp />
-    )
-  }
-
-  componentDidMount() {
-    this.props.resetError();
-  }
 }
 
 
-export default connect (null, { resetError })(Landing)
+export default connect(null, { resetError })(Landing);
