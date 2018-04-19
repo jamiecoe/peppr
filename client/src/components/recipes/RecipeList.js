@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import _ from 'lodash';
 import Navbar from '../Navbar';
 
-class RecipeList extends Component {
+export class RecipeList extends Component {
   extraPosts() {
     const remainder = _.size(this.props.recipes) % 3;
 
