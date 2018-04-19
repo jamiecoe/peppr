@@ -1,4 +1,4 @@
-import { DISPLAY_ERROR, RESET_ERROR } from '../actions/types'
+import { DISPLAY_ERROR, RESET_ERROR } from '../actions/types';
 
 export default (state = '', action) => {
   switch (action.type) {
@@ -9,4 +9,4 @@ export default (state = '', action) => {
     default:
       return state;
   }
-}
+};

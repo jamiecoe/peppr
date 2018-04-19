@@ -5,8 +5,8 @@ export default (state = null, action) => {
     case AUTH_USER:
       return true;
     case UNAUTH_USER:
-      return false;  
+      return false;
     default:
       return state;
   }
-}
+};

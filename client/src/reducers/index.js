@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import authReducer from './authReducer';
 import { reducer as formReducer } from 'redux-form';
+import authReducer from './authReducer';
 import errorReducer from './errorReducer';
 import newRecipeReducer from './newRecipeReducer';
-import recipesReducer from './recipesReducer'
+import recipesReducer from './recipesReducer';
 import showFormReducer from './showFormReducer';
 
 export default combineReducers({
@@ -12,5 +12,5 @@ export default combineReducers({
   error: errorReducer,
   newRecipe: newRecipeReducer,
   recipes: recipesReducer,
-  showForm: showFormReducer
+  showForm: showFormReducer,
 });
