@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import shortid from 'shortid';
 import { getSingleRecipe, deleteRecipe } from '../../actions/recipes';
 import Navbar from '../Navbar';
 
@@ -15,13 +16,15 @@ class SingleRecipe extends Component {
   onDeleteClick = () => {
     const { id } = this.props.match.params;
     this.props.deleteRecipe(id);
-  }
+  };
 
   renderStringToList(str) {
     const stringSplit = str.includes('\n\n') ? '\n\n' : '\n';
     return str.split(stringSplit).map((line, index) => {
-      if (index !== str.split(stringSplit).length - 1)
-        return <li key={index}>{line}</li>;
+      if (index !== str.split(stringSplit).length - 1) {
+        return <li key={shortid.generate()}>{line}</li>;
+      }
+      return null;
     });
   }
 
@@ -64,12 +67,7 @@ class SingleRecipe extends Component {
   }
 }
 
-const mapStateToProps = ({ recipes }, ownProps) => {
-  return recipes
-    ? { recipe: recipes[ownProps.match.params.id] }
-    : { recipe: recipes };
-};
+const mapStateToProps = ({ recipes }, ownProps) =>
+  (recipes ? { recipe: recipes[ownProps.match.params.id] } : { recipe: recipes });
 
-export default connect(mapStateToProps, { getSingleRecipe, deleteRecipe })(
-  SingleRecipe
-);
+export default connect(mapStateToProps, { getSingleRecipe, deleteRecipe })(SingleRecipe);

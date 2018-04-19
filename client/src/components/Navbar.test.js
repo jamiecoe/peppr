@@ -5,7 +5,6 @@ import { Navbar } from './Navbar';
 describe('Navbar', () => {
   const props = { page: 'singleRecipe' };
   const navbar = shallow(<Navbar {...props} />);
-  console.log(navbar.find('Link').last());
 
   it('renders properly', () => {
     expect(navbar).toMatchSnapshot();
