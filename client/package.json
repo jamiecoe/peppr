@@ -141,5 +141,8 @@
       "jest": true,
       "browser": true
     }
+  },
+  "devDependencies": {
+    "react-router-enzyme-context": "^1.2.0"
   }
 }

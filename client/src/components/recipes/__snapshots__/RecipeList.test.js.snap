@@ -4,7 +4,22 @@ exports[`RecipeList renders properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RecipeList />,
+  Symbol(enzyme.__unrendered__): <RecipeList
+    recipes={
+        Array [
+            Object {
+              "id": 1,
+              "imageurl": "",
+              "title": "",
+            },
+            Object {
+              "id": 2,
+              "imageurl": "",
+              "title": "",
+            },
+          ]
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -36,6 +51,53 @@ ShallowWrapper {
           <div
                     className="recipeList__link recipeList__hidden-2x2"
           />
+          <Link
+                    className="recipeList__link recipelist--overlay"
+                    replace={false}
+                    to="/recipes/1"
+          >
+                    <div
+                              className="recipeList__link--container"
+                              style={
+                                        Object {
+                                                  "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                }
+                              }
+                    >
+                              <div
+                                        className="recipeList__link--innercontainer"
+                              >
+                                        <h2
+                                                  className="recipeList__recipeTitle"
+                                        />
+                              </div>
+                    </div>
+          </Link>
+          <Link
+                    className="recipeList__link recipelist--overlay"
+                    replace={false}
+                    to="/recipes/2"
+          >
+                    <div
+                              className="recipeList__link--container"
+                              style={
+                                        Object {
+                                                  "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                }
+                              }
+                    >
+                              <div
+                                        className="recipeList__link--innercontainer"
+                              >
+                                        <h2
+                                                  className="recipeList__recipeTitle"
+                                        />
+                              </div>
+                    </div>
+          </Link>
+          <div
+                    className="recipeList__link"
+          />
 </div>,
         <Connect(Navbar) />,
       ],
@@ -64,8 +126,57 @@ ShallowWrapper {
             <div
               className="recipeList__link recipeList__hidden-2x2"
 />,
-            Array [],
-            null,
+            Array [
+              <Link
+                className="recipeList__link recipelist--overlay"
+                replace={false}
+                to="/recipes/1"
+>
+                <div
+                                className="recipeList__link--container"
+                                style={
+                                                Object {
+                                                                "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                              }
+                                }
+                >
+                                <div
+                                                className="recipeList__link--innercontainer"
+                                >
+                                                <h2
+                                                                className="recipeList__recipeTitle"
+                                                />
+                                </div>
+                </div>
+</Link>,
+              <Link
+                className="recipeList__link recipelist--overlay"
+                replace={false}
+                to="/recipes/2"
+>
+                <div
+                                className="recipeList__link--container"
+                                style={
+                                                Object {
+                                                                "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                              }
+                                }
+                >
+                                <div
+                                                className="recipeList__link--innercontainer"
+                                >
+                                                <h2
+                                                                className="recipeList__recipeTitle"
+                                                />
+                                </div>
+                </div>
+</Link>,
+            ],
+            Array [
+              <div
+                className="recipeList__link"
+/>,
+            ],
           ],
           "className": "recipeList__allrecipes",
         },
@@ -120,7 +231,163 @@ ShallowWrapper {
             "rendered": null,
             "type": "div",
           },
-          null,
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "children": <div
+                className="recipeList__link--container"
+                style={
+                                Object {
+                                                "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                              }
+                }
+>
+                <div
+                                className="recipeList__link--innercontainer"
+                >
+                                <h2
+                                                className="recipeList__recipeTitle"
+                                />
+                </div>
+</div>,
+              "className": "recipeList__link recipelist--overlay",
+              "replace": false,
+              "to": "/recipes/1",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="recipeList__link--innercontainer"
+>
+                  <h2
+                                    className="recipeList__recipeTitle"
+                  />
+</div>,
+                "className": "recipeList__link--container",
+                "style": Object {
+                  "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <h2
+                    className="recipeList__recipeTitle"
+/>,
+                  "className": "recipeList__link--innercontainer",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                    "className": "recipeList__recipeTitle",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "h2",
+                },
+                "type": "div",
+              },
+              "type": "div",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "class",
+            "props": Object {
+              "children": <div
+                className="recipeList__link--container"
+                style={
+                                Object {
+                                                "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                              }
+                }
+>
+                <div
+                                className="recipeList__link--innercontainer"
+                >
+                                <h2
+                                                className="recipeList__recipeTitle"
+                                />
+                </div>
+</div>,
+              "className": "recipeList__link recipelist--overlay",
+              "replace": false,
+              "to": "/recipes/2",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="recipeList__link--innercontainer"
+>
+                  <h2
+                                    className="recipeList__recipeTitle"
+                  />
+</div>,
+                "className": "recipeList__link--container",
+                "style": Object {
+                  "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <h2
+                    className="recipeList__recipeTitle"
+/>,
+                  "className": "recipeList__link--innercontainer",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                    "className": "recipeList__recipeTitle",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "h2",
+                },
+                "type": "div",
+              },
+              "type": "div",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "className": "recipeList__link",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
         ],
         "type": "div",
       },
@@ -161,6 +428,53 @@ ShallowWrapper {
             <div
                         className="recipeList__link recipeList__hidden-2x2"
             />
+            <Link
+                        className="recipeList__link recipelist--overlay"
+                        replace={false}
+                        to="/recipes/1"
+            >
+                        <div
+                                    className="recipeList__link--container"
+                                    style={
+                                                Object {
+                                                            "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                          }
+                                    }
+                        >
+                                    <div
+                                                className="recipeList__link--innercontainer"
+                                    >
+                                                <h2
+                                                            className="recipeList__recipeTitle"
+                                                />
+                                    </div>
+                        </div>
+            </Link>
+            <Link
+                        className="recipeList__link recipelist--overlay"
+                        replace={false}
+                        to="/recipes/2"
+            >
+                        <div
+                                    className="recipeList__link--container"
+                                    style={
+                                                Object {
+                                                            "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                          }
+                                    }
+                        >
+                                    <div
+                                                className="recipeList__link--innercontainer"
+                                    >
+                                                <h2
+                                                            className="recipeList__recipeTitle"
+                                                />
+                                    </div>
+                        </div>
+            </Link>
+            <div
+                        className="recipeList__link"
+            />
 </div>,
           <Connect(Navbar) />,
         ],
@@ -189,8 +503,57 @@ ShallowWrapper {
               <div
                 className="recipeList__link recipeList__hidden-2x2"
 />,
-              Array [],
-              null,
+              Array [
+                <Link
+                  className="recipeList__link recipelist--overlay"
+                  replace={false}
+                  to="/recipes/1"
+>
+                  <div
+                                    className="recipeList__link--container"
+                                    style={
+                                                      Object {
+                                                                        "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                                      }
+                                    }
+                  >
+                                    <div
+                                                      className="recipeList__link--innercontainer"
+                                    >
+                                                      <h2
+                                                                        className="recipeList__recipeTitle"
+                                                      />
+                                    </div>
+                  </div>
+</Link>,
+                <Link
+                  className="recipeList__link recipelist--overlay"
+                  replace={false}
+                  to="/recipes/2"
+>
+                  <div
+                                    className="recipeList__link--container"
+                                    style={
+                                                      Object {
+                                                                        "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                                      }
+                                    }
+                  >
+                                    <div
+                                                      className="recipeList__link--innercontainer"
+                                    >
+                                                      <h2
+                                                                        className="recipeList__recipeTitle"
+                                                      />
+                                    </div>
+                  </div>
+</Link>,
+              ],
+              Array [
+                <div
+                  className="recipeList__link"
+/>,
+              ],
             ],
             "className": "recipeList__allrecipes",
           },
@@ -245,7 +608,163 @@ ShallowWrapper {
               "rendered": null,
               "type": "div",
             },
-            null,
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "children": <div
+                  className="recipeList__link--container"
+                  style={
+                                    Object {
+                                                      "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                    }
+                  }
+>
+                  <div
+                                    className="recipeList__link--innercontainer"
+                  >
+                                    <h2
+                                                      className="recipeList__recipeTitle"
+                                    />
+                  </div>
+</div>,
+                "className": "recipeList__link recipelist--overlay",
+                "replace": false,
+                "to": "/recipes/1",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="recipeList__link--innercontainer"
+>
+                    <h2
+                                        className="recipeList__recipeTitle"
+                    />
+</div>,
+                  "className": "recipeList__link--container",
+                  "style": Object {
+                    "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                  },
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <h2
+                      className="recipeList__recipeTitle"
+/>,
+                    "className": "recipeList__link--innercontainer",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "",
+                      "className": "recipeList__recipeTitle",
+                    },
+                    "ref": null,
+                    "rendered": "",
+                    "type": "h2",
+                  },
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "children": <div
+                  className="recipeList__link--container"
+                  style={
+                                    Object {
+                                                      "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                                                    }
+                  }
+>
+                  <div
+                                    className="recipeList__link--innercontainer"
+                  >
+                                    <h2
+                                                      className="recipeList__recipeTitle"
+                                    />
+                  </div>
+</div>,
+                "className": "recipeList__link recipelist--overlay",
+                "replace": false,
+                "to": "/recipes/2",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="recipeList__link--innercontainer"
+>
+                    <h2
+                                        className="recipeList__recipeTitle"
+                    />
+</div>,
+                  "className": "recipeList__link--container",
+                  "style": Object {
+                    "backgroundImage": "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url()",
+                  },
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <h2
+                      className="recipeList__recipeTitle"
+/>,
+                    "className": "recipeList__link--innercontainer",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "",
+                      "className": "recipeList__recipeTitle",
+                    },
+                    "ref": null,
+                    "rendered": "",
+                    "type": "h2",
+                  },
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "className": "recipeList__link",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
           ],
           "type": "div",
         },
