@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
-
 import { getRecipes } from '../../actions/recipes';
 import RecipeList from './RecipeList';
 import Navbar from '../Navbar';
 import NoRecipes from './NoRecipes';
 import Banner from '../MobileBanner';
 
-class Recipes extends Component {
+export class Recipes extends Component {
   componentDidMount() {
     this.props.getRecipes();
   }
