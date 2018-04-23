@@ -2,11 +2,11 @@ const test = require('tape');
 const request = require('supertest');
 const app = require('../../app');
 const dbBuild = require('../../database/db_build');
+require('env2')('config.env');
 
 const urlScraper = () => {
   test('Routes: test for urlScraper route', (t) => {
-    const token =
-      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTUxNjI2OTY3NzgzMn0.rWD7TYNYFWVFlJAQsPTQm6CawqXYX8w_BEyB5WcGRyA';
+    const token = process.env.TEST_TOKEN;
 
     const goodurl = {
       url: 'https://www.jamieoliver.com/recipes/pork-recipes/pork-meatballs/',
