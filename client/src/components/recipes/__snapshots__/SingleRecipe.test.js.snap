@@ -1,0 +1,716 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleRecipe renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SingleRecipe
+    deleteRecipe={[Function]}
+    getSingleRecipe={[Function]}
+    match={
+        Object {
+            "params": Object {
+              "id": 2,
+            },
+          }
+    }
+    recipe={
+        Object {
+            "imageurl": "",
+            "ingredients": "",
+            "method": "",
+            "title": "",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="singleRecipe__img"
+          style={
+                    Object {
+                              "backgroundImage": "url()",
+                            }
+          }
+/>,
+        <div
+          className="singleRecipe__textcontainer--outer"
+>
+          <div
+                    className="singleRecipe__textcontainer--inner"
+          >
+                    <Link
+                              className="singleRecipe__backarrow"
+                              replace={false}
+                              to="/recipes"
+                    >
+                              <i
+                                        className="ion-ios-arrow-back"
+                              />
+                    </Link>
+                    <h1
+                              className="singleRecipe__title"
+                    />
+                    <h2
+                              className="singleRecipe__sub-title"
+                    >
+                              Ingredients
+                    </h2>
+                    <ul
+                              className="singleRecipe__list--ingredients"
+                    >
+                              
+                    </ul>
+                    <h2
+                              className="singleRecipe__sub-title"
+                    >
+                              Method
+                    </h2>
+                    <ol
+                              className="singleRecipe__list--method"
+                    >
+                              
+                    </ol>
+                    <button
+                              className="singleRecipe__deleteButton"
+                              onClick={[Function]}
+                    >
+                              Delete Recipe
+                    </button>
+          </div>
+</div>,
+        <Connect(Navbar)
+          page="singleRecipe"
+/>,
+      ],
+      "className": "singleRecipe__container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "singleRecipe__img",
+          "style": Object {
+            "backgroundImage": "url()",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="singleRecipe__textcontainer--inner"
+>
+            <Link
+                        className="singleRecipe__backarrow"
+                        replace={false}
+                        to="/recipes"
+            >
+                        <i
+                                    className="ion-ios-arrow-back"
+                        />
+            </Link>
+            <h1
+                        className="singleRecipe__title"
+            />
+            <h2
+                        className="singleRecipe__sub-title"
+            >
+                        Ingredients
+            </h2>
+            <ul
+                        className="singleRecipe__list--ingredients"
+            >
+                        
+            </ul>
+            <h2
+                        className="singleRecipe__sub-title"
+            >
+                        Method
+            </h2>
+            <ol
+                        className="singleRecipe__list--method"
+            >
+                        
+            </ol>
+            <button
+                        className="singleRecipe__deleteButton"
+                        onClick={[Function]}
+            >
+                        Delete Recipe
+            </button>
+</div>,
+          "className": "singleRecipe__textcontainer--outer",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="singleRecipe__backarrow"
+                replace={false}
+                to="/recipes"
+>
+                <i
+                                className="ion-ios-arrow-back"
+                />
+</Link>,
+              <h1
+                className="singleRecipe__title"
+/>,
+              <h2
+                className="singleRecipe__sub-title"
+>
+                Ingredients
+</h2>,
+              <ul
+                className="singleRecipe__list--ingredients"
+>
+                
+</ul>,
+              <h2
+                className="singleRecipe__sub-title"
+>
+                Method
+</h2>,
+              <ol
+                className="singleRecipe__list--method"
+>
+                
+</ol>,
+              <button
+                className="singleRecipe__deleteButton"
+                onClick={[Function]}
+>
+                Delete Recipe
+</button>,
+            ],
+            "className": "singleRecipe__textcontainer--inner",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <i
+                  className="ion-ios-arrow-back"
+/>,
+                "className": "singleRecipe__backarrow",
+                "replace": false,
+                "to": "/recipes",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "ion-ios-arrow-back",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "singleRecipe__title",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Ingredients",
+                "className": "singleRecipe__sub-title",
+              },
+              "ref": null,
+              "rendered": "Ingredients",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  null,
+                ],
+                "className": "singleRecipe__list--ingredients",
+              },
+              "ref": null,
+              "rendered": Array [
+                null,
+              ],
+              "type": "ul",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Method",
+                "className": "singleRecipe__sub-title",
+              },
+              "ref": null,
+              "rendered": "Method",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  null,
+                ],
+                "className": "singleRecipe__list--method",
+              },
+              "ref": null,
+              "rendered": Array [
+                null,
+              ],
+              "type": "ol",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Delete Recipe",
+                "className": "singleRecipe__deleteButton",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Delete Recipe",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "page": "singleRecipe",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="singleRecipe__img"
+            style={
+                        Object {
+                                    "backgroundImage": "url()",
+                                  }
+            }
+/>,
+          <div
+            className="singleRecipe__textcontainer--outer"
+>
+            <div
+                        className="singleRecipe__textcontainer--inner"
+            >
+                        <Link
+                                    className="singleRecipe__backarrow"
+                                    replace={false}
+                                    to="/recipes"
+                        >
+                                    <i
+                                                className="ion-ios-arrow-back"
+                                    />
+                        </Link>
+                        <h1
+                                    className="singleRecipe__title"
+                        />
+                        <h2
+                                    className="singleRecipe__sub-title"
+                        >
+                                    Ingredients
+                        </h2>
+                        <ul
+                                    className="singleRecipe__list--ingredients"
+                        >
+                                    
+                        </ul>
+                        <h2
+                                    className="singleRecipe__sub-title"
+                        >
+                                    Method
+                        </h2>
+                        <ol
+                                    className="singleRecipe__list--method"
+                        >
+                                    
+                        </ol>
+                        <button
+                                    className="singleRecipe__deleteButton"
+                                    onClick={[Function]}
+                        >
+                                    Delete Recipe
+                        </button>
+            </div>
+</div>,
+          <Connect(Navbar)
+            page="singleRecipe"
+/>,
+        ],
+        "className": "singleRecipe__container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "singleRecipe__img",
+            "style": Object {
+              "backgroundImage": "url()",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="singleRecipe__textcontainer--inner"
+>
+              <Link
+                            className="singleRecipe__backarrow"
+                            replace={false}
+                            to="/recipes"
+              >
+                            <i
+                                          className="ion-ios-arrow-back"
+                            />
+              </Link>
+              <h1
+                            className="singleRecipe__title"
+              />
+              <h2
+                            className="singleRecipe__sub-title"
+              >
+                            Ingredients
+              </h2>
+              <ul
+                            className="singleRecipe__list--ingredients"
+              >
+                            
+              </ul>
+              <h2
+                            className="singleRecipe__sub-title"
+              >
+                            Method
+              </h2>
+              <ol
+                            className="singleRecipe__list--method"
+              >
+                            
+              </ol>
+              <button
+                            className="singleRecipe__deleteButton"
+                            onClick={[Function]}
+              >
+                            Delete Recipe
+              </button>
+</div>,
+            "className": "singleRecipe__textcontainer--outer",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  className="singleRecipe__backarrow"
+                  replace={false}
+                  to="/recipes"
+>
+                  <i
+                                    className="ion-ios-arrow-back"
+                  />
+</Link>,
+                <h1
+                  className="singleRecipe__title"
+/>,
+                <h2
+                  className="singleRecipe__sub-title"
+>
+                  Ingredients
+</h2>,
+                <ul
+                  className="singleRecipe__list--ingredients"
+>
+                  
+</ul>,
+                <h2
+                  className="singleRecipe__sub-title"
+>
+                  Method
+</h2>,
+                <ol
+                  className="singleRecipe__list--method"
+>
+                  
+</ol>,
+                <button
+                  className="singleRecipe__deleteButton"
+                  onClick={[Function]}
+>
+                  Delete Recipe
+</button>,
+              ],
+              "className": "singleRecipe__textcontainer--inner",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <i
+                    className="ion-ios-arrow-back"
+/>,
+                  "className": "singleRecipe__backarrow",
+                  "replace": false,
+                  "to": "/recipes",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "ion-ios-arrow-back",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                  "className": "singleRecipe__title",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ingredients",
+                  "className": "singleRecipe__sub-title",
+                },
+                "ref": null,
+                "rendered": "Ingredients",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    null,
+                  ],
+                  "className": "singleRecipe__list--ingredients",
+                },
+                "ref": null,
+                "rendered": Array [
+                  null,
+                ],
+                "type": "ul",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Method",
+                  "className": "singleRecipe__sub-title",
+                },
+                "ref": null,
+                "rendered": "Method",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    null,
+                  ],
+                  "className": "singleRecipe__list--method",
+                },
+                "ref": null,
+                "rendered": Array [
+                  null,
+                ],
+                "type": "ol",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Delete Recipe",
+                  "className": "singleRecipe__deleteButton",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Delete Recipe",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "page": "singleRecipe",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`SingleRecipe when \`recipe\` props has not been set yet should only render a loading message <div> 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SingleRecipe
+    deleteRecipe={[Function]}
+    getSingleRecipe={[Function]}
+    match={
+        Object {
+            "params": Object {
+              "id": 2,
+            },
+          }
+    }
+    recipe={undefined}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Loading...",
+    },
+    "ref": null,
+    "rendered": "Loading...",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Loading...",
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": false,
+  },
+}
+`;

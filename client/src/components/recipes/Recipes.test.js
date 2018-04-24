@@ -18,7 +18,7 @@ describe('RecipeList', () => {
     expect(recipes).toMatchSnapshot();
   });
 
-  it('dispatches the `getRecipes` method it receives from props on componentDidMount()', () => {
+  it('calls the `getRecipes` method it receives from props on componentDidMount()', () => {
     expect(mockGetRecipes).toHaveBeenCalled();
   });
 
