@@ -12,9 +12,7 @@ describe('RecipeList', () => {
     getRecipes: mockGetRecipes,
     recipes: mockRecipes,
   };
-  let recipes = shallow(<Recipes {...props} />, {
-    disableLifecycleMethods: false,
-  });
+  let recipes = shallow(<Recipes {...props} />, { disableLifecycleMethods: false });
 
   it('renders properly', () => {
     expect(recipes).toMatchSnapshot();

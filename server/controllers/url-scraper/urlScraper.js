@@ -4,6 +4,8 @@ const delicious = require('./delicious');
 
 const urlScraper = (req, res) => {
 
+  console.log('urlScaper.js', req.headers);
+
   const { url } = req.body;
 
   if(url.includes('bbcgoodfood')) bbcgf(url, req, res);

@@ -14,7 +14,7 @@ export const resetRecipe = () => (
 );
 
 export const checkUrl = values => (dispatch) => {
-  axios.post('/urlscraper', values)
+  axios.post('/urlscraper', values, { headers: { authorization: localStorage.getItem('token') } })
     .then((response) => {
       dispatch({
         type: FETCH_RECIPE,

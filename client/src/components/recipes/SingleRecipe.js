@@ -5,7 +5,7 @@ import shortid from 'shortid';
 import { getSingleRecipe, deleteRecipe } from '../../actions/recipes';
 import Navbar from '../Navbar';
 
-class SingleRecipe extends Component {
+export class SingleRecipe extends Component {
   componentDidMount() {
     if (!this.props.recipe) {
       const { id } = this.props.match.params;
