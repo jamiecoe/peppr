@@ -51,6 +51,7 @@ describe('SingleRecipe', () => {
 
     it('should only render a loading message <div>', () => {
       expect(singleRecipe).toMatchSnapshot();
+      expect(singleRecipe.find('div').text()).toEqual('Loading...');
     });
 
     it('calls the `getSingleRecipe` method it receives from props on componentDidMount() with the id on the url params', () => {

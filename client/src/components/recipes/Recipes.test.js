@@ -34,6 +34,7 @@ describe('RecipeList', () => {
 
     it('should find the <NoRecipes> component', () => {
       expect(recipes).toMatchSnapshot();
+      expect(recipes.find('NoRecipes').exists()).toBe(true);
     });
   });
 
@@ -45,6 +46,7 @@ describe('RecipeList', () => {
 
     it('should only find the <Navbar> component', () => {
       expect(recipes).toMatchSnapshot();
+      expect(recipes.find('Connect(Navbar)').exists()).toBe(true);
     });
   });
 });

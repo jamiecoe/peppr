@@ -20,6 +20,7 @@ describe('AddRecipes', () => {
 
   it('renders properly, and NOT show <NewRecipeForm>', () => {
     expect(addRecipe).toMatchSnapshot();
+    expect(addRecipe.find('Connect(ReduxForm)').exists()).not.toBe(true);
   });
 
   it('should call `resetForm` and `resetRecipe` in componentDidMount()', () => {
@@ -47,6 +48,7 @@ describe('AddRecipes', () => {
 
     it('should render properly, and show <NewRecipeForm>', () => {
       expect(addRecipe).toMatchSnapshot();
+      expect(addRecipe.find('Connect(ReduxForm)').exists()).toBe(true);
     });
   });
 });
