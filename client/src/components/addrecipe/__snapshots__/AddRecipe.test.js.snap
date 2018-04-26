@@ -1,0 +1,657 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddRecipes renders properly, and NOT show <NewRecipeForm> 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AddRecipe
+    resetError={[Function]}
+    resetRecipe={[Function]}
+    show={false}
+    showForm={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Banner
+          title="Add a recipe"
+/>,
+        <img
+          alt="red peppers on a dark background"
+          className="addrecipe__image"
+          src="peppers.jpg"
+/>,
+        <div
+          className="addrecipe__container"
+>
+          <h1
+                    className="addrecipe__header addrecipe__innermargin"
+          >
+                    Add a Recipe
+          </h1>
+          <ReduxForm />
+          <button
+                    className="addrecipe__link addrecipe__innermargin"
+                    onClick={[Function]}
+                    to="#"
+          >
+                    Or enter your recipe details manually
+          </button>
+          <div />
+</div>,
+        <Connect(Navbar)
+          page="addRecipe"
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "title": "Add a recipe",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "red peppers on a dark background",
+          "className": "addrecipe__image",
+          "src": "peppers.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="addrecipe__header addrecipe__innermargin"
+>
+              Add a Recipe
+</h1>,
+            <ReduxForm />,
+            <button
+              className="addrecipe__link addrecipe__innermargin"
+              onClick={[Function]}
+              to="#"
+>
+              Or enter your recipe details manually
+</button>,
+            <div />,
+          ],
+          "className": "addrecipe__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add a Recipe",
+              "className": "addrecipe__header addrecipe__innermargin",
+            },
+            "ref": null,
+            "rendered": "Add a Recipe",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Or enter your recipe details manually",
+              "className": "addrecipe__link addrecipe__innermargin",
+              "onClick": [Function],
+              "to": "#",
+            },
+            "ref": null,
+            "rendered": "Or enter your recipe details manually",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "page": "addRecipe",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Banner
+            title="Add a recipe"
+/>,
+          <img
+            alt="red peppers on a dark background"
+            className="addrecipe__image"
+            src="peppers.jpg"
+/>,
+          <div
+            className="addrecipe__container"
+>
+            <h1
+                        className="addrecipe__header addrecipe__innermargin"
+            >
+                        Add a Recipe
+            </h1>
+            <ReduxForm />
+            <button
+                        className="addrecipe__link addrecipe__innermargin"
+                        onClick={[Function]}
+                        to="#"
+            >
+                        Or enter your recipe details manually
+            </button>
+            <div />
+</div>,
+          <Connect(Navbar)
+            page="addRecipe"
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "title": "Add a recipe",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "red peppers on a dark background",
+            "className": "addrecipe__image",
+            "src": "peppers.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="addrecipe__header addrecipe__innermargin"
+>
+                Add a Recipe
+</h1>,
+              <ReduxForm />,
+              <button
+                className="addrecipe__link addrecipe__innermargin"
+                onClick={[Function]}
+                to="#"
+>
+                Or enter your recipe details manually
+</button>,
+              <div />,
+            ],
+            "className": "addrecipe__container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add a Recipe",
+                "className": "addrecipe__header addrecipe__innermargin",
+              },
+              "ref": null,
+              "rendered": "Add a Recipe",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Or enter your recipe details manually",
+                "className": "addrecipe__link addrecipe__innermargin",
+                "onClick": [Function],
+                "to": "#",
+              },
+              "ref": null,
+              "rendered": "Or enter your recipe details manually",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "page": "addRecipe",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": false,
+  },
+}
+`;
+
+exports[`AddRecipes when \`props.show\` is true should render properly, and show <NewRecipeForm> 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AddRecipe
+    resetError={[Function]}
+    resetRecipe={[Function]}
+    show={true}
+    showForm={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Banner
+          title="Add a recipe"
+/>,
+        <img
+          alt="red peppers on a dark background"
+          className="addrecipe__image"
+          src="peppers.jpg"
+/>,
+        <div
+          className="addrecipe__container"
+>
+          <h1
+                    className="addrecipe__header addrecipe__innermargin"
+          >
+                    Add a Recipe
+          </h1>
+          <ReduxForm />
+          <button
+                    className="addrecipe__link addrecipe__innermargin"
+                    onClick={[Function]}
+                    to="#"
+          >
+                    Or enter your recipe details manually
+          </button>
+          <Connect(ReduxForm) />
+</div>,
+        <Connect(Navbar)
+          page="addRecipe"
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "title": "Add a recipe",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "red peppers on a dark background",
+          "className": "addrecipe__image",
+          "src": "peppers.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="addrecipe__header addrecipe__innermargin"
+>
+              Add a Recipe
+</h1>,
+            <ReduxForm />,
+            <button
+              className="addrecipe__link addrecipe__innermargin"
+              onClick={[Function]}
+              to="#"
+>
+              Or enter your recipe details manually
+</button>,
+            <Connect(ReduxForm) />,
+          ],
+          "className": "addrecipe__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add a Recipe",
+              "className": "addrecipe__header addrecipe__innermargin",
+            },
+            "ref": null,
+            "rendered": "Add a Recipe",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Or enter your recipe details manually",
+              "className": "addrecipe__link addrecipe__innermargin",
+              "onClick": [Function],
+              "to": "#",
+            },
+            "ref": null,
+            "rendered": "Or enter your recipe details manually",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "page": "addRecipe",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Banner
+            title="Add a recipe"
+/>,
+          <img
+            alt="red peppers on a dark background"
+            className="addrecipe__image"
+            src="peppers.jpg"
+/>,
+          <div
+            className="addrecipe__container"
+>
+            <h1
+                        className="addrecipe__header addrecipe__innermargin"
+            >
+                        Add a Recipe
+            </h1>
+            <ReduxForm />
+            <button
+                        className="addrecipe__link addrecipe__innermargin"
+                        onClick={[Function]}
+                        to="#"
+            >
+                        Or enter your recipe details manually
+            </button>
+            <Connect(ReduxForm) />
+</div>,
+          <Connect(Navbar)
+            page="addRecipe"
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "title": "Add a recipe",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "red peppers on a dark background",
+            "className": "addrecipe__image",
+            "src": "peppers.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="addrecipe__header addrecipe__innermargin"
+>
+                Add a Recipe
+</h1>,
+              <ReduxForm />,
+              <button
+                className="addrecipe__link addrecipe__innermargin"
+                onClick={[Function]}
+                to="#"
+>
+                Or enter your recipe details manually
+</button>,
+              <Connect(ReduxForm) />,
+            ],
+            "className": "addrecipe__container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add a Recipe",
+                "className": "addrecipe__header addrecipe__innermargin",
+              },
+              "ref": null,
+              "rendered": "Add a Recipe",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Or enter your recipe details manually",
+                "className": "addrecipe__link addrecipe__innermargin",
+                "onClick": [Function],
+                "to": "#",
+              },
+              "ref": null,
+              "rendered": "Or enter your recipe details manually",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "page": "addRecipe",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

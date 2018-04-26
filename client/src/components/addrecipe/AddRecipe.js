@@ -9,7 +9,7 @@ import { showForm, resetRecipe } from '../../actions/recipes';
 import { resetError } from '../../actions/auth';
 import peppers from '../../assets/images/peppers.jpg';
 
-class AddRecipe extends Component {
+export class AddRecipe extends Component {
   componentDidMount() {
     this.props.resetError();
     this.props.resetRecipe();
