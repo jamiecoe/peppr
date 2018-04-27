@@ -3,13 +3,15 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { addRecipe } from '../../actions/recipes';
 
-class NewRecipeForm extends Component {
+export class NewRecipeForm extends Component {
   onSubmit(values) {
     this.props.addRecipe(values);
   }
 
   renderField(field) {
-    const { meta: { touched, error } } = field;
+    const {
+      meta: { touched, error },
+    } = field;
 
     return (
       <div className="newrecipe__form">

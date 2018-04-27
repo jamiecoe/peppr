@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewRecipeForm renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NewRecipeForm
+    addRecipe={[Function]}
+    handleSubmit={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Field
+          arialabel="Title"
+          component={[Function]}
+          name="title"
+          placeholder="Title"
+          textfield={false}
+/>,
+        <Field
+          arialabel="Ingredients"
+          component={[Function]}
+          name="ingredients"
+          placeholder="Ingredients"
+          textfield={true}
+/>,
+        <Field
+          arialabel="Method"
+          component={[Function]}
+          name="method"
+          placeholder="Method"
+          textfield={true}
+/>,
+        <Field
+          arialabel="Image Url (optional)"
+          component={[Function]}
+          name="imageUrl"
+          placeholder="Image Url (optional)"
+          textfield={true}
+/>,
+        <Field
+          arialabel="Tags (optional)"
+          component={[Function]}
+          name="tags"
+          placeholder="Tags (optional)"
+          textfield={true}
+/>,
+        <input
+          className="newrecipe__form__btn"
+          defaultValue="Save"
+          type="submit"
+/>,
+      ],
+      "className": "newrecipe__form__container addrecipe__innermargin",
+      "onSubmit": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arialabel": "Title",
+          "component": [Function],
+          "name": "title",
+          "placeholder": "Title",
+          "textfield": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arialabel": "Ingredients",
+          "component": [Function],
+          "name": "ingredients",
+          "placeholder": "Ingredients",
+          "textfield": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arialabel": "Method",
+          "component": [Function],
+          "name": "method",
+          "placeholder": "Method",
+          "textfield": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arialabel": "Image Url (optional)",
+          "component": [Function],
+          "name": "imageUrl",
+          "placeholder": "Image Url (optional)",
+          "textfield": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arialabel": "Tags (optional)",
+          "component": [Function],
+          "name": "tags",
+          "placeholder": "Tags (optional)",
+          "textfield": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "newrecipe__form__btn",
+          "defaultValue": "Save",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Field
+            arialabel="Title"
+            component={[Function]}
+            name="title"
+            placeholder="Title"
+            textfield={false}
+/>,
+          <Field
+            arialabel="Ingredients"
+            component={[Function]}
+            name="ingredients"
+            placeholder="Ingredients"
+            textfield={true}
+/>,
+          <Field
+            arialabel="Method"
+            component={[Function]}
+            name="method"
+            placeholder="Method"
+            textfield={true}
+/>,
+          <Field
+            arialabel="Image Url (optional)"
+            component={[Function]}
+            name="imageUrl"
+            placeholder="Image Url (optional)"
+            textfield={true}
+/>,
+          <Field
+            arialabel="Tags (optional)"
+            component={[Function]}
+            name="tags"
+            placeholder="Tags (optional)"
+            textfield={true}
+/>,
+          <input
+            className="newrecipe__form__btn"
+            defaultValue="Save"
+            type="submit"
+/>,
+        ],
+        "className": "newrecipe__form__container addrecipe__innermargin",
+        "onSubmit": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arialabel": "Title",
+            "component": [Function],
+            "name": "title",
+            "placeholder": "Title",
+            "textfield": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arialabel": "Ingredients",
+            "component": [Function],
+            "name": "ingredients",
+            "placeholder": "Ingredients",
+            "textfield": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arialabel": "Method",
+            "component": [Function],
+            "name": "method",
+            "placeholder": "Method",
+            "textfield": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arialabel": "Image Url (optional)",
+            "component": [Function],
+            "name": "imageUrl",
+            "placeholder": "Image Url (optional)",
+            "textfield": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arialabel": "Tags (optional)",
+            "component": [Function],
+            "name": "tags",
+            "placeholder": "Tags (optional)",
+            "textfield": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "newrecipe__form__btn",
+            "defaultValue": "Save",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
