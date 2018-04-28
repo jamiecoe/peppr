@@ -63,7 +63,7 @@ ShallowWrapper {
 />,
       ],
       "className": "newrecipe__form__container addrecipe__innermargin",
-      "onSubmit": undefined,
+      "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -207,7 +207,7 @@ ShallowWrapper {
 />,
         ],
         "className": "newrecipe__form__container addrecipe__innermargin",
-        "onSubmit": undefined,
+        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [

@@ -4,20 +4,12 @@ import { NewRecipeForm } from './NewRecipeForm';
 
 describe('NewRecipeForm', () => {
   const mockAddRecipe = jest.fn();
-  const mockHandleSubmit = jest.fn();
+  const mockHandleSubmit = jest.fn(fn => fn);
   const props = {
     addRecipe: mockAddRecipe,
     handleSubmit: mockHandleSubmit,
   };
   const newRecipeForm = shallow(<NewRecipeForm {...props} />);
-
-  const mockFormValues = {
-    title: 'sfsfgd§',
-    ingredients: 'sdfsfsfds',
-    method: 'asdfasdsada',
-    imageUrl: 'adsadadsa',
-    tags: 'asdsadasdsad',
-  };
 
   it('renders properly', () => {
     expect(newRecipeForm).toMatchSnapshot();
@@ -30,9 +22,34 @@ describe('NewRecipeForm', () => {
         .simulate('submit');
     });
 
-    it('should call the handleSubmit method in props', () => {
+    it('should call mockHandleSubmit() and mockAddRecipe() ', () => {
       expect(mockHandleSubmit).toHaveBeenCalled();
-      console.log(newRecipeForm);
+      expect(mockAddRecipe).toHaveBeenCalled();
+    });
+  });
+
+  describe('when the `renderField` method is invoked', () => {
+    const fieldProps = {
+      meta: {
+        touched: true,
+        error: 'test error',
+      },
+      textfield: true,
+      arialabel: 'test arialabel',
+      placeholder: 'test placeholder',
+      input: {},
+    };
+
+    const RenderedField = newRecipeForm.instance().renderField(fieldProps);
+    const renderField = shallow(RenderedField);
+
+    it('should include a textarea', () => {
+      expect(renderField.find('textarea').exists()).toBe(true);
+    });
+
+    it('should include an error message', () => {
+      expect(renderField.find('.newrecipe__input--errortext').text())
+        .toBe(fieldProps.meta.error);
     });
   });
 });

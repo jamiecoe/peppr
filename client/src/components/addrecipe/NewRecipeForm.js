@@ -9,10 +9,7 @@ export class NewRecipeForm extends Component {
   }
 
   renderField(field) {
-    const {
-      meta: { touched, error },
-    } = field;
-
+    const { touched, error } = field.meta;
     return (
       <div className="newrecipe__form">
         {field.textfield ? (
