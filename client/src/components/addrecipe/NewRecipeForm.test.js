@@ -43,7 +43,8 @@ describe('NewRecipeForm', () => {
     const RenderedField = newRecipeForm.instance().renderField(fieldProps);
     const renderField = shallow(RenderedField);
 
-    it('should include a textarea', () => {
+    it('should render properly, with a textarea', () => {
+      expect(renderField).toMatchSnapshot();
       expect(renderField.find('textarea').exists()).toBe(true);
     });
 

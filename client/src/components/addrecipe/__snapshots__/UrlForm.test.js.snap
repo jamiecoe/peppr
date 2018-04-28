@@ -1,0 +1,883 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UrlForm should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UrlForm
+    checkUrl={[Function]}
+    error=""
+    handleSubmit={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="urlform__text addrecipe__innermargin"
+>
+          Enter a recipe URL from one of our partner sites to save the recipe automatically:
+</p>,
+        <Field
+          arialabel="Url"
+          component={[Function]}
+          name="url"
+/>,
+        null,
+        <div
+          className="urlform__modal"
+>
+          <p
+                    className="addrecipe__innermargin addrecipe__partnersite--text"
+          >
+                    Our partner sites are:
+          </p>
+          <div
+                    className="urlform__modal__imagecontainer addrecipe__innermargin"
+          >
+                    <a
+                              href="https://www.bbcgoodfood.com/"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                    >
+                              <img
+                                        alt="BBC Good Food logo"
+                                        src="goodfood.png"
+                              />
+                    </a>
+                    <a
+                              href="https://www.jamieoliver.com/"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                    >
+                              <img
+                                        alt="Jamie Oliver logo"
+                                        src="jamieoliver.png"
+                              />
+                    </a>
+                    <a
+                              href="http://www.deliciousmagazine.co.uk/"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                    >
+                              <img
+                                        alt="Delicious Magazine logo"
+                                        src="delicious.png"
+                              />
+                    </a>
+          </div>
+</div>,
+      ],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Enter a recipe URL from one of our partner sites to save the recipe automatically:",
+          "className": "urlform__text addrecipe__innermargin",
+        },
+        "ref": null,
+        "rendered": "Enter a recipe URL from one of our partner sites to save the recipe automatically:",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arialabel": "Url",
+          "component": [Function],
+          "name": "url",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="addrecipe__innermargin addrecipe__partnersite--text"
+>
+              Our partner sites are:
+</p>,
+            <div
+              className="urlform__modal__imagecontainer addrecipe__innermargin"
+>
+              <a
+                            href="https://www.bbcgoodfood.com/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+              >
+                            <img
+                                          alt="BBC Good Food logo"
+                                          src="goodfood.png"
+                            />
+              </a>
+              <a
+                            href="https://www.jamieoliver.com/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+              >
+                            <img
+                                          alt="Jamie Oliver logo"
+                                          src="jamieoliver.png"
+                            />
+              </a>
+              <a
+                            href="http://www.deliciousmagazine.co.uk/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+              >
+                            <img
+                                          alt="Delicious Magazine logo"
+                                          src="delicious.png"
+                            />
+              </a>
+</div>,
+          ],
+          "className": "urlform__modal",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Our partner sites are:",
+              "className": "addrecipe__innermargin addrecipe__partnersite--text",
+            },
+            "ref": null,
+            "rendered": "Our partner sites are:",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  href="https://www.bbcgoodfood.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  <img
+                                    alt="BBC Good Food logo"
+                                    src="goodfood.png"
+                  />
+</a>,
+                <a
+                  href="https://www.jamieoliver.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  <img
+                                    alt="Jamie Oliver logo"
+                                    src="jamieoliver.png"
+                  />
+</a>,
+                <a
+                  href="http://www.deliciousmagazine.co.uk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+>
+                  <img
+                                    alt="Delicious Magazine logo"
+                                    src="delicious.png"
+                  />
+</a>,
+              ],
+              "className": "urlform__modal__imagecontainer addrecipe__innermargin",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="BBC Good Food logo"
+                    src="goodfood.png"
+/>,
+                  "href": "https://www.bbcgoodfood.com/",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "BBC Good Food logo",
+                    "src": "goodfood.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="Jamie Oliver logo"
+                    src="jamieoliver.png"
+/>,
+                  "href": "https://www.jamieoliver.com/",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Jamie Oliver logo",
+                    "src": "jamieoliver.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="Delicious Magazine logo"
+                    src="delicious.png"
+/>,
+                  "href": "http://www.deliciousmagazine.co.uk/",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Delicious Magazine logo",
+                    "src": "delicious.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "a",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="urlform__text addrecipe__innermargin"
+>
+            Enter a recipe URL from one of our partner sites to save the recipe automatically:
+</p>,
+          <Field
+            arialabel="Url"
+            component={[Function]}
+            name="url"
+/>,
+          null,
+          <div
+            className="urlform__modal"
+>
+            <p
+                        className="addrecipe__innermargin addrecipe__partnersite--text"
+            >
+                        Our partner sites are:
+            </p>
+            <div
+                        className="urlform__modal__imagecontainer addrecipe__innermargin"
+            >
+                        <a
+                                    href="https://www.bbcgoodfood.com/"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                        >
+                                    <img
+                                                alt="BBC Good Food logo"
+                                                src="goodfood.png"
+                                    />
+                        </a>
+                        <a
+                                    href="https://www.jamieoliver.com/"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                        >
+                                    <img
+                                                alt="Jamie Oliver logo"
+                                                src="jamieoliver.png"
+                                    />
+                        </a>
+                        <a
+                                    href="http://www.deliciousmagazine.co.uk/"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                        >
+                                    <img
+                                                alt="Delicious Magazine logo"
+                                                src="delicious.png"
+                                    />
+                        </a>
+            </div>
+</div>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Enter a recipe URL from one of our partner sites to save the recipe automatically:",
+            "className": "urlform__text addrecipe__innermargin",
+          },
+          "ref": null,
+          "rendered": "Enter a recipe URL from one of our partner sites to save the recipe automatically:",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arialabel": "Url",
+            "component": [Function],
+            "name": "url",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="addrecipe__innermargin addrecipe__partnersite--text"
+>
+                Our partner sites are:
+</p>,
+              <div
+                className="urlform__modal__imagecontainer addrecipe__innermargin"
+>
+                <a
+                                href="https://www.bbcgoodfood.com/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                >
+                                <img
+                                                alt="BBC Good Food logo"
+                                                src="goodfood.png"
+                                />
+                </a>
+                <a
+                                href="https://www.jamieoliver.com/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                >
+                                <img
+                                                alt="Jamie Oliver logo"
+                                                src="jamieoliver.png"
+                                />
+                </a>
+                <a
+                                href="http://www.deliciousmagazine.co.uk/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                >
+                                <img
+                                                alt="Delicious Magazine logo"
+                                                src="delicious.png"
+                                />
+                </a>
+</div>,
+            ],
+            "className": "urlform__modal",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Our partner sites are:",
+                "className": "addrecipe__innermargin addrecipe__partnersite--text",
+              },
+              "ref": null,
+              "rendered": "Our partner sites are:",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    href="https://www.bbcgoodfood.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+>
+                    <img
+                                        alt="BBC Good Food logo"
+                                        src="goodfood.png"
+                    />
+</a>,
+                  <a
+                    href="https://www.jamieoliver.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+>
+                    <img
+                                        alt="Jamie Oliver logo"
+                                        src="jamieoliver.png"
+                    />
+</a>,
+                  <a
+                    href="http://www.deliciousmagazine.co.uk/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+>
+                    <img
+                                        alt="Delicious Magazine logo"
+                                        src="delicious.png"
+                    />
+</a>,
+                ],
+                "className": "urlform__modal__imagecontainer addrecipe__innermargin",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="BBC Good Food logo"
+                      src="goodfood.png"
+/>,
+                    "href": "https://www.bbcgoodfood.com/",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "BBC Good Food logo",
+                      "src": "goodfood.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Jamie Oliver logo"
+                      src="jamieoliver.png"
+/>,
+                    "href": "https://www.jamieoliver.com/",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Jamie Oliver logo",
+                      "src": "jamieoliver.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Delicious Magazine logo"
+                      src="delicious.png"
+/>,
+                    "href": "http://www.deliciousmagazine.co.uk/",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Delicious Magazine logo",
+                      "src": "delicious.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`UrlForm when the \`renderField\` method is invoked should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div>
+    <div
+        className="urlform addrecipe__innermargin"
+    >
+        <input
+            aria-label="test arialabel"
+            className="urlform__input"
+            placeholder="Enter URL"
+            type="url"
+        />
+        <button
+            className="urlform__btn"
+            type="submit"
+        >
+            <i
+                className="ion-ios-download urlform__btn__icon"
+            />
+        </button>
+    </div>
+    <p
+        className="urlform__input--errortext addrecipe__innermargin"
+    >
+        test error
+    </p>
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="urlform addrecipe__innermargin"
+>
+          <input
+                    aria-label="test arialabel"
+                    className="urlform__input"
+                    placeholder="Enter URL"
+                    type="url"
+          />
+          <button
+                    className="urlform__btn"
+                    type="submit"
+          >
+                    <i
+                              className="ion-ios-download urlform__btn__icon"
+                    />
+          </button>
+</div>,
+        <p
+          className="urlform__input--errortext addrecipe__innermargin"
+>
+          test error
+</p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              aria-label="test arialabel"
+              className="urlform__input"
+              placeholder="Enter URL"
+              type="url"
+/>,
+            <button
+              className="urlform__btn"
+              type="submit"
+>
+              <i
+                            className="ion-ios-download urlform__btn__icon"
+              />
+</button>,
+          ],
+          "className": "urlform addrecipe__innermargin",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "aria-label": "test arialabel",
+              "className": "urlform__input",
+              "placeholder": "Enter URL",
+              "type": "url",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <i
+                className="ion-ios-download urlform__btn__icon"
+/>,
+              "className": "urlform__btn",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "ion-ios-download urlform__btn__icon",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "test error",
+          "className": "urlform__input--errortext addrecipe__innermargin",
+        },
+        "ref": null,
+        "rendered": "test error",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="urlform addrecipe__innermargin"
+>
+            <input
+                        aria-label="test arialabel"
+                        className="urlform__input"
+                        placeholder="Enter URL"
+                        type="url"
+            />
+            <button
+                        className="urlform__btn"
+                        type="submit"
+            >
+                        <i
+                                    className="ion-ios-download urlform__btn__icon"
+                        />
+            </button>
+</div>,
+          <p
+            className="urlform__input--errortext addrecipe__innermargin"
+>
+            test error
+</p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                aria-label="test arialabel"
+                className="urlform__input"
+                placeholder="Enter URL"
+                type="url"
+/>,
+              <button
+                className="urlform__btn"
+                type="submit"
+>
+                <i
+                                className="ion-ios-download urlform__btn__icon"
+                />
+</button>,
+            ],
+            "className": "urlform addrecipe__innermargin",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "aria-label": "test arialabel",
+                "className": "urlform__input",
+                "placeholder": "Enter URL",
+                "type": "url",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="ion-ios-download urlform__btn__icon"
+/>,
+                "className": "urlform__btn",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "ion-ios-download urlform__btn__icon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "test error",
+            "className": "urlform__input--errortext addrecipe__innermargin",
+          },
+          "ref": null,
+          "rendered": "test error",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

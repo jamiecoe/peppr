@@ -7,7 +7,7 @@ import goodfood from '../../assets/images/goodfood.png';
 import delicious from '../../assets/images/delicious.png';
 import jamieoliver from '../../assets/images/jamieoliver.png';
 
-class UrlForm extends Component {
+export class UrlForm extends Component {
   onSubmit(values) {
     this.props.checkUrl(values);
   }
@@ -24,7 +24,7 @@ class UrlForm extends Component {
   }
 
   renderField(field) {
-    const { meta: { touched, error } } = field;
+    const { touched, error } = field.meta;
 
     return (
       <div>
