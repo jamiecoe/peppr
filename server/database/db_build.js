@@ -9,8 +9,7 @@ const build = sql('./db_build.sql');
 const runDbBuild = (callback) => {
   db
     .query(build)
-    .then(res => {
-      console.log('res', res);
+    .then(() => {
       callback();
     })
     .catch(e => console.error('error', e));

@@ -5,23 +5,24 @@ const dbBuild = require('../../database/db_build');
 require('env2')('config.env');
 
 const getUserTest = () => {
-  test('Routes: test for getuser route', (t) => {
+  dbBuild(() => {
     const token = process.env.TEST_TOKEN;
-    dbBuild(() => {
+
+    test('Routes: test for getuser route', (t) => {
       request(app)
         .get('/getuser')
         .set('authorization', token)
+        .expect(200)
         .end((err, res) => {
           t.error(err, 'err object should be null');
-          t.equal(res.status, 200, 'request with valid token should generate 200 response');
-        });
 
-      request(app)
-        .get('/getuser')
-        .end((err, res) => {
-          t.error(err, 'err object should be null');
-          t.equal(res.status, 401, 'request without token should return a 401 response');
-          t.end();
+          request(app)
+            .get('/getuser')
+            .expect(401)
+            .end((err2, res2) => {
+              t.error(err2, 'err object should be null');
+              t.end();
+            });
         });
     });
   });
