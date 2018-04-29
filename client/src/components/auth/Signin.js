@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { signinUser, resetError } from '../../actions/auth';
 
-class SignIn extends Component {
+export class SignIn extends Component {
   componentDidMount() {
     this.props.resetError();
   }
@@ -35,7 +35,7 @@ class SignIn extends Component {
   renderAlert() {
     if (this.props.error) {
       return (
-        <span>
+        <span className="signin-form-error-msg">
           <strong>Oops!</strong> {this.props.error}
         </span>
       );

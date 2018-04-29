@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignIn
+    error=""
+    handleSubmit={[Function]}
+    resetError={[Function]}
+    signinUser={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <form
+          onSubmit={[Function]}
+>
+          <Field
+                    arialabel="Email"
+                    component={[Function]}
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+          />
+          <Field
+                    arialabel="Password"
+                    component={[Function]}
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+          />
+          <p
+                    className="landing__input--errortext"
+          >
+                    <span />
+          </p>
+          <input
+                    className="landing__form__btn"
+                    defaultValue="Login"
+                    type="submit"
+          />
+</form>,
+        <Link
+          className="landing__form__togglelink"
+          replace={false}
+          to="/signup"
+>
+          New to Peppr? Sign up
+</Link>,
+      ],
+      "className": "landing__form__container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Field
+              arialabel="Email"
+              component={[Function]}
+              name="email"
+              placeholder="Email"
+              type="email"
+/>,
+            <Field
+              arialabel="Password"
+              component={[Function]}
+              name="password"
+              placeholder="Password"
+              type="password"
+/>,
+            <p
+              className="landing__input--errortext"
+>
+              <span />
+</p>,
+            <input
+              className="landing__form__btn"
+              defaultValue="Login"
+              type="submit"
+/>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "arialabel": "Email",
+              "component": [Function],
+              "name": "email",
+              "placeholder": "Email",
+              "type": "email",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "arialabel": "Password",
+              "component": [Function],
+              "name": "password",
+              "placeholder": "Password",
+              "type": "password",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span />,
+              "className": "landing__input--errortext",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "landing__form__btn",
+              "defaultValue": "Login",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "form",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "New to Peppr? Sign up",
+          "className": "landing__form__togglelink",
+          "replace": false,
+          "to": "/signup",
+        },
+        "ref": null,
+        "rendered": "New to Peppr? Sign up",
+        "type": [Function],
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <form
+            onSubmit={[Function]}
+>
+            <Field
+                        arialabel="Email"
+                        component={[Function]}
+                        name="email"
+                        placeholder="Email"
+                        type="email"
+            />
+            <Field
+                        arialabel="Password"
+                        component={[Function]}
+                        name="password"
+                        placeholder="Password"
+                        type="password"
+            />
+            <p
+                        className="landing__input--errortext"
+            >
+                        <span />
+            </p>
+            <input
+                        className="landing__form__btn"
+                        defaultValue="Login"
+                        type="submit"
+            />
+</form>,
+          <Link
+            className="landing__form__togglelink"
+            replace={false}
+            to="/signup"
+>
+            New to Peppr? Sign up
+</Link>,
+        ],
+        "className": "landing__form__container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Field
+                arialabel="Email"
+                component={[Function]}
+                name="email"
+                placeholder="Email"
+                type="email"
+/>,
+              <Field
+                arialabel="Password"
+                component={[Function]}
+                name="password"
+                placeholder="Password"
+                type="password"
+/>,
+              <p
+                className="landing__input--errortext"
+>
+                <span />
+</p>,
+              <input
+                className="landing__form__btn"
+                defaultValue="Login"
+                type="submit"
+/>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "arialabel": "Email",
+                "component": [Function],
+                "name": "email",
+                "placeholder": "Email",
+                "type": "email",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "arialabel": "Password",
+                "component": [Function],
+                "name": "password",
+                "placeholder": "Password",
+                "type": "password",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span />,
+                "className": "landing__input--errortext",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "landing__form__btn",
+                "defaultValue": "Login",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "form",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "New to Peppr? Sign up",
+            "className": "landing__form__togglelink",
+            "replace": false,
+            "to": "/signup",
+          },
+          "ref": null,
+          "rendered": "New to Peppr? Sign up",
+          "type": [Function],
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": false,
+  },
+}
+`;
+
+exports[`SignIn when the \`renderField\` method is invoked should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="landing__input--errortext"
+>
+    test error
+</div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": "2",
+    "nodeType": "host",
+    "props": Object {
+      "children": "test error",
+      "className": "landing__input--errortext",
+    },
+    "ref": null,
+    "rendered": "test error",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": "2",
+      "nodeType": "host",
+      "props": Object {
+        "children": "test error",
+        "className": "landing__input--errortext",
+      },
+      "ref": null,
+      "rendered": "test error",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
