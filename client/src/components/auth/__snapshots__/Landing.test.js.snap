@@ -1,0 +1,505 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing should render properly, with <SignIn> component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Landing
+    match={
+        Object {
+            "path": "/",
+          }
+    }
+    resetError={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="red peppers on a dark background"
+          className="landing__image"
+          src="peppers.jpg"
+/>,
+        <div
+          className="landing__container"
+>
+          <h1
+                    className="landing__header"
+          >
+                    PEPPR
+          </h1>
+          <p
+                    className="landing__tagline"
+          >
+                    All your recipes in one place
+          </p>
+          <ReduxForm
+                    name="SignIn"
+          />
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "red peppers on a dark background",
+          "className": "landing__image",
+          "src": "peppers.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="landing__header"
+>
+              PEPPR
+</h1>,
+            <p
+              className="landing__tagline"
+>
+              All your recipes in one place
+</p>,
+            <ReduxForm
+              name="SignIn"
+/>,
+          ],
+          "className": "landing__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "PEPPR",
+              "className": "landing__header",
+            },
+            "ref": null,
+            "rendered": "PEPPR",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "All your recipes in one place",
+              "className": "landing__tagline",
+            },
+            "ref": null,
+            "rendered": "All your recipes in one place",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "SignIn",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="red peppers on a dark background"
+            className="landing__image"
+            src="peppers.jpg"
+/>,
+          <div
+            className="landing__container"
+>
+            <h1
+                        className="landing__header"
+            >
+                        PEPPR
+            </h1>
+            <p
+                        className="landing__tagline"
+            >
+                        All your recipes in one place
+            </p>
+            <ReduxForm
+                        name="SignIn"
+            />
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "red peppers on a dark background",
+            "className": "landing__image",
+            "src": "peppers.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="landing__header"
+>
+                PEPPR
+</h1>,
+              <p
+                className="landing__tagline"
+>
+                All your recipes in one place
+</p>,
+              <ReduxForm
+                name="SignIn"
+/>,
+            ],
+            "className": "landing__container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "PEPPR",
+                "className": "landing__header",
+              },
+              "ref": null,
+              "rendered": "PEPPR",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "All your recipes in one place",
+                "className": "landing__tagline",
+              },
+              "ref": null,
+              "rendered": "All your recipes in one place",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "SignIn",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": false,
+  },
+}
+`;
+
+exports[`Landing when props.match.path does not equal "/" should render properly, with <SignOut> component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Landing
+    match={
+        Object {
+            "path": "/test",
+          }
+    }
+    resetError={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="red peppers on a dark background"
+          className="landing__image"
+          src="peppers.jpg"
+/>,
+        <div
+          className="landing__container"
+>
+          <h1
+                    className="landing__header"
+          >
+                    PEPPR
+          </h1>
+          <p
+                    className="landing__tagline"
+          >
+                    All your recipes in one place
+          </p>
+          <ReduxForm
+                    name="SignUp"
+          />
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "red peppers on a dark background",
+          "className": "landing__image",
+          "src": "peppers.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="landing__header"
+>
+              PEPPR
+</h1>,
+            <p
+              className="landing__tagline"
+>
+              All your recipes in one place
+</p>,
+            <ReduxForm
+              name="SignUp"
+/>,
+          ],
+          "className": "landing__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "PEPPR",
+              "className": "landing__header",
+            },
+            "ref": null,
+            "rendered": "PEPPR",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "All your recipes in one place",
+              "className": "landing__tagline",
+            },
+            "ref": null,
+            "rendered": "All your recipes in one place",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "SignUp",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="red peppers on a dark background"
+            className="landing__image"
+            src="peppers.jpg"
+/>,
+          <div
+            className="landing__container"
+>
+            <h1
+                        className="landing__header"
+            >
+                        PEPPR
+            </h1>
+            <p
+                        className="landing__tagline"
+            >
+                        All your recipes in one place
+            </p>
+            <ReduxForm
+                        name="SignUp"
+            />
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "red peppers on a dark background",
+            "className": "landing__image",
+            "src": "peppers.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="landing__header"
+>
+                PEPPR
+</h1>,
+              <p
+                className="landing__tagline"
+>
+                All your recipes in one place
+</p>,
+              <ReduxForm
+                name="SignUp"
+/>,
+            ],
+            "className": "landing__container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "PEPPR",
+                "className": "landing__header",
+              },
+              "ref": null,
+              "rendered": "PEPPR",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "All your recipes in one place",
+                "className": "landing__tagline",
+              },
+              "ref": null,
+              "rendered": "All your recipes in one place",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "SignUp",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
