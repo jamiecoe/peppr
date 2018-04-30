@@ -11,7 +11,7 @@ import SingleRecipe from './recipes/SingleRecipe';
 import ServerError from './errors/ServerError500';
 import NotFound from './errors/NotFound400';
 
-class App extends Component {
+export class App extends Component {
   componentDidMount() {
     this.props.getUser();
   }
