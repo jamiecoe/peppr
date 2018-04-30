@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServerError should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ServerError />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="red peppers on a dark background"
+          className="errorpage__image"
+          src="peppers.jpg"
+/>,
+        <div
+          className="errorpage__message"
+>
+          <p
+                    className="errorpage__message--large"
+          >
+                    Oops!
+          </p>
+          <p>
+                    500. That's a server error. Please try again later or navigate
+                     
+                    <Link
+                              replace={false}
+                              to="/"
+                    >
+                              home
+                    </Link>
+          </p>
+</div>,
+      ],
+      "className": "errorpage__container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "red peppers on a dark background",
+          "className": "errorpage__image",
+          "src": "peppers.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="errorpage__message--large"
+>
+              Oops!
+</p>,
+            <p>
+              500. That's a server error. Please try again later or navigate
+               
+              <Link
+                            replace={false}
+                            to="/"
+              >
+                            home
+              </Link>
+</p>,
+          ],
+          "className": "errorpage__message",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Oops!",
+              "className": "errorpage__message--large",
+            },
+            "ref": null,
+            "rendered": "Oops!",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "500. That's a server error. Please try again later or navigate",
+                " ",
+                <Link
+                  replace={false}
+                  to="/"
+>
+                  home
+</Link>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "500. That's a server error. Please try again later or navigate",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "home",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "home",
+                "type": [Function],
+              },
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="red peppers on a dark background"
+            className="errorpage__image"
+            src="peppers.jpg"
+/>,
+          <div
+            className="errorpage__message"
+>
+            <p
+                        className="errorpage__message--large"
+            >
+                        Oops!
+            </p>
+            <p>
+                        500. That's a server error. Please try again later or navigate
+                         
+                        <Link
+                                    replace={false}
+                                    to="/"
+                        >
+                                    home
+                        </Link>
+            </p>
+</div>,
+        ],
+        "className": "errorpage__container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "red peppers on a dark background",
+            "className": "errorpage__image",
+            "src": "peppers.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="errorpage__message--large"
+>
+                Oops!
+</p>,
+              <p>
+                500. That's a server error. Please try again later or navigate
+                 
+                <Link
+                                replace={false}
+                                to="/"
+                >
+                                home
+                </Link>
+</p>,
+            ],
+            "className": "errorpage__message",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Oops!",
+                "className": "errorpage__message--large",
+              },
+              "ref": null,
+              "rendered": "Oops!",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "500. That's a server error. Please try again later or navigate",
+                  " ",
+                  <Link
+                    replace={false}
+                    to="/"
+>
+                    home
+</Link>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "500. That's a server error. Please try again later or navigate",
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "home",
+                    "replace": false,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": "home",
+                  "type": [Function],
+                },
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

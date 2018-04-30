@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import peppers from '../../assets/images/peppers.jpg';
 
-const serverError = () => (
+const ServerError = () => (
   <div className="errorpage__container">
     <img
       className="errorpage__image"
@@ -19,4 +19,4 @@ const serverError = () => (
   </div>
 );
 
-export default serverError;
+export default ServerError;
