@@ -1,25 +1,25 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { SignIn } from './Signin';
+import { SignUp } from './Signup';
 
-describe('SignIn', () => {
+describe('SignUp', () => {
+  const mockSignupUser = jest.fn();
   const mockResetError = jest.fn();
-  const mockSigninUser = jest.fn();
   const mockHandleSubmit = jest.fn(fn => fn);
 
   const props = {
+    signupUser: mockSignupUser,
     resetError: mockResetError,
-    signinUser: mockSigninUser,
     handleSubmit: mockHandleSubmit,
     error: '',
   };
 
-  let signin = shallow(<SignIn {...props} />, {
+  let signup = shallow(<SignUp {...props} />, {
     disableLifecycleMethods: false,
   });
 
   it('should render properly', () => {
-    expect(signin).toMatchSnapshot();
+    expect(signup).toMatchSnapshot();
   });
 
   it('should call `resetError` in componentDidMount()', () => {
@@ -28,7 +28,7 @@ describe('SignIn', () => {
 
   describe('when the user submits the form', () => {
     beforeEach(() => {
-      signin.find('form').simulate('submit');
+      signup.find('form').simulate('submit');
     });
 
     it('should call mockHandleSubmit()', () => {
@@ -36,19 +36,18 @@ describe('SignIn', () => {
     });
 
     it('should call mockSigninUser', () => {
-      expect(mockSigninUser).toHaveBeenCalled();
+      expect(mockSignupUser).toHaveBeenCalled();
     });
   });
 
   describe('when there is an error on props', () => {
     beforeEach(() => {
       props.error = 'this is a test error';
-      signin = shallow(<SignIn {...props} />);
+      signup = shallow(<SignUp {...props} />);
     });
 
     it('should render the error message from props', () => {
-      expect(signin.find('.signin-form-error-msg').text())
-        .toBe(`Oops! ${props.error}`);
+      expect(signup.find('.landing__input--errortext > span').text()).toBe(`Oops! ${props.error}`);
     });
   });
 
@@ -64,7 +63,7 @@ describe('SignIn', () => {
       input: {},
     };
 
-    const RenderedField = signin.instance().renderField(fieldProps)[1];
+    const RenderedField = signup.instance().renderField(fieldProps)[1];
     const renderField = shallow(RenderedField);
 
     it('should render properly', () => {
@@ -72,8 +71,7 @@ describe('SignIn', () => {
     });
 
     it('should include an error message', () => {
-      expect(renderField.find('.landing__input--errortext').text())
-        .toBe(fieldProps.meta.error);
+      expect(renderField.find('.landing__input--errortext').text()).toBe(fieldProps.meta.error);
     });
   });
 });

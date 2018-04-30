@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { signupUser, resetError } from '../../actions/auth';
 
-class SignUp extends Component {
+export class SignUp extends Component {
   componentDidMount() {
     this.props.resetError();
   }
@@ -14,7 +14,7 @@ class SignUp extends Component {
   }
 
   renderField(field) {
-    const { meta: { touched, error } } = field;
+    const { touched, error } = field.meta;
     const className =
       touched && error ? 'landing__input--error' : 'landing__input';
     return [
