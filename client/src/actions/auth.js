@@ -9,7 +9,6 @@ export const displayError = err => (
   }
 );
 
-
 export const resetError = () => (
   {
     type: RESET_ERROR,
@@ -23,20 +22,18 @@ export const logoutUser = () => {
   };
 };
 
-export const getUser = () => (dispatch) => {
+export const getUser = () => dispatch =>
   axios
     .get('/getuser', {
       headers: { authorization: localStorage.getItem('token') },
     })
-    .then(() => {
-      dispatch({ type: AUTH_USER });
-    })
+    .then(() => dispatch({ type: AUTH_USER }))
     .catch(() => {
       dispatch({ type: UNAUTH_USER });
     });
-};
 
-export const signupUser = values => (dispatch) => {
+
+export const signupUser = values => dispatch =>
   axios
     .post('/signup', values)
     .then((response) => {
@@ -49,9 +46,8 @@ export const signupUser = values => (dispatch) => {
     .catch((err) => {
       dispatch(displayError(err.response.data.error));
     });
-};
 
-export const signinUser = values => (dispatch) => {
+export const signinUser = values => dispatch =>
   axios
     .post('/signin', values)
     .then((response) => {
@@ -62,10 +58,9 @@ export const signinUser = values => (dispatch) => {
       history.push('/recipes');
     })
     .catch((err) => {
-      if (err.message.includes('401')) {
+      if (err.response.status === 401) {
         dispatch(displayError('Email or password was incorrect'));
       } else {
         dispatch(displayError('There was an issue with our server. Please try again later'));
       }
     });
-};
