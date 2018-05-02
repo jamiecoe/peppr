@@ -13,7 +13,7 @@ export const resetRecipe = () => (
   }
 );
 
-export const checkUrl = values => (dispatch) => {
+export const checkUrl = values => dispatch =>
   axios.post('/urlscraper', values, { headers: { authorization: localStorage.getItem('token') } })
     .then((response) => {
       dispatch({
@@ -25,9 +25,9 @@ export const checkUrl = values => (dispatch) => {
     .catch((err) => {
       dispatch(displayError(err.response.data.error));
     });
-};
 
-export const addRecipe = values => (dispatch) => {
+
+export const addRecipe = values => dispatch =>
   axios.post('/addnewrecipe', values, { headers: { authorization: localStorage.getItem('token') } })
     .then((response) => {
       dispatch({
@@ -39,9 +39,8 @@ export const addRecipe = values => (dispatch) => {
     .catch(() => {
       history.push('/servererror');
     });
-};
 
-export const getRecipes = () => (dispatch) => {
+export const getRecipes = () => dispatch =>
   axios.get('/getrecipes', { headers: { authorization: localStorage.getItem('token') } })
     .then((response) => {
       dispatch({
@@ -52,7 +51,6 @@ export const getRecipes = () => (dispatch) => {
     .catch(() => {
       history.push('/servererror');
     });
-};
 
 export const getSingleRecipe = id => (dispatch) => {
   axios.get(`/getsinglerecipe/${id}`, {

@@ -1,5 +1,9 @@
 import _ from 'lodash';
-import { GET_RECIPES, GET_SINGLE_RECIPE, DELETE_RECIPE } from '../actions/types';
+import {
+  GET_RECIPES,
+  GET_SINGLE_RECIPE,
+  DELETE_RECIPE,
+} from '../actions/types';
 
 export default (state = null, action) => {
   switch (action.type) {
