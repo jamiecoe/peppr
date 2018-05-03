@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { NewRecipeForm } from './NewRecipeForm';
+import { NewRecipeForm, validate } from './NewRecipeForm';
 
 describe('NewRecipeForm', () => {
   const mockAddRecipe = jest.fn();
@@ -49,8 +49,23 @@ describe('NewRecipeForm', () => {
     });
 
     it('should include an error message', () => {
-      expect(renderField.find('.newrecipe__input--errortext').text())
-        .toBe(fieldProps.meta.error);
+      expect(renderField.find('.newrecipe__input--errortext').text()).toBe(
+        fieldProps.meta.error,
+      );
     });
+  });
+});
+
+describe('validate function', () => {
+  it('should return the correct errors, if the values are missing', () => {
+    const mockValues = {};
+
+    const expectedError = {
+      title: 'Enter a title',
+      ingredients: 'Enter your ingredients',
+      method: 'Enter your method steps',
+    };
+
+    expect(validate(mockValues)).toEqual(expectedError);
   });
 });

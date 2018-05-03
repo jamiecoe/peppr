@@ -79,7 +79,7 @@ export class UrlForm extends Component {
   }
 }
 
-const validate = (values) => {
+export const validate = (values) => {
   const errors = {};
 
   if (!values.url) {

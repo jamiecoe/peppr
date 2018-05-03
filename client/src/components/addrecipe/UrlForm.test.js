@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { UrlForm } from './UrlForm';
+import { UrlForm, validate } from './UrlForm';
 
 describe('UrlForm', () => {
   const mockCheckUrl = jest.fn();
@@ -37,8 +37,9 @@ describe('UrlForm', () => {
     });
 
     it('should render the error message from props', () => {
-      expect(urlForm.find('.urlform__input--errortext').text())
-        .toBe(`Oops! ${props.error}`);
+      expect(urlForm.find('.urlform__input--errortext').text()).toBe(
+        `Oops! ${props.error}`,
+      );
     });
   });
 
@@ -67,5 +68,17 @@ describe('UrlForm', () => {
           .text(),
       ).toBe(fieldProps.meta.error);
     });
+  });
+});
+
+describe('validate function', () => {
+  it('should return the correct errors, if the values are missing', () => {
+    const mockValues = {};
+
+    const expectedError = {
+      url: 'Enter a recipe URL',
+    };
+
+    expect(validate(mockValues)).toEqual(expectedError);
   });
 });

@@ -91,7 +91,7 @@ export class SignUp extends Component {
   }
 }
 
-const validate = (values) => {
+export const validate = (values) => {
   const errors = {};
   if (!values.name) errors.name = 'Enter your name';
   if (!values.email) errors.email = 'Enter your email';

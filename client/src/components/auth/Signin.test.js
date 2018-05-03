@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { SignIn } from './Signin';
+import { SignIn, validate } from './Signin';
 
 describe('SignIn', () => {
   const mockResetError = jest.fn();
@@ -47,8 +47,9 @@ describe('SignIn', () => {
     });
 
     it('should render the error message from props', () => {
-      expect(signin.find('.signin-form-error-msg').text())
-        .toBe(`Oops! ${props.error}`);
+      expect(signin.find('.signin-form-error-msg').text()).toBe(
+        `Oops! ${props.error}`,
+      );
     });
   });
 
@@ -72,8 +73,22 @@ describe('SignIn', () => {
     });
 
     it('should include an error message', () => {
-      expect(renderField.find('.landing__input--errortext').text())
-        .toBe(fieldProps.meta.error);
+      expect(renderField.find('.landing__input--errortext').text()).toBe(
+        fieldProps.meta.error,
+      );
     });
+  });
+});
+
+describe('validate function', () => {
+  it('should return the correct errors, if the values are missing', () => {
+    const mockValues = {};
+
+    const expectedError = {
+      email: 'Enter your email',
+      password: 'Enter your password',
+    };
+
+    expect(validate(mockValues)).toEqual(expectedError);
   });
 });

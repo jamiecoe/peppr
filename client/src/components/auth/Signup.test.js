@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { SignUp } from './Signup';
+import { SignUp, validate } from './Signup';
 
 describe('SignUp', () => {
   const mockSignupUser = jest.fn();
@@ -47,7 +47,9 @@ describe('SignUp', () => {
     });
 
     it('should render the error message from props', () => {
-      expect(signup.find('.landing__input--errortext > span').text()).toBe(`Oops! ${props.error}`);
+      expect(signup.find('.landing__input--errortext > span').text()).toBe(
+        `Oops! ${props.error}`,
+      );
     });
   });
 
@@ -71,7 +73,36 @@ describe('SignUp', () => {
     });
 
     it('should include an error message', () => {
-      expect(renderField.find('.landing__input--errortext').text()).toBe(fieldProps.meta.error);
+      expect(renderField.find('.landing__input--errortext').text()).toBe(
+        fieldProps.meta.error,
+      );
     });
+  });
+});
+
+describe('validate function', () => {
+  it('should return the correct errors, if the values are missing', () => {
+    const mockValues = {};
+
+    const expectedError = {
+      name: 'Enter your name',
+      email: 'Enter your email',
+      password: 'Enter your password',
+      confirmPassword: 'Enter your password again',
+    };
+
+    expect(validate(mockValues)).toEqual(expectedError);
+  });
+
+  it('should return the correct error if passwords do not match', () => {
+    const mockValues = { password: 'test', confirmPassword: 'tes' };
+
+    const expectedError = {
+      name: 'Enter your name',
+      email: 'Enter your email',
+      confirmPassword: 'Password do not match',
+    };
+
+    expect(validate(mockValues)).toEqual(expectedError);
   });
 });

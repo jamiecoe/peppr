@@ -88,7 +88,7 @@ export class NewRecipeForm extends Component {
   }
 }
 
-const validate = (values) => {
+export const validate = (values) => {
   const errors = {};
 
   if (!values.title) {

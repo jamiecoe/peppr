@@ -78,7 +78,7 @@ export class SignIn extends Component {
   }
 }
 
-const validate = (values) => {
+export const validate = (values) => {
   const errors = {};
   if (!values.email) errors.email = 'Enter your email';
   if (!values.password) errors.password = 'Enter your password';
