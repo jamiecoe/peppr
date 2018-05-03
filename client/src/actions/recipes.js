@@ -52,7 +52,7 @@ export const getRecipes = () => dispatch =>
       history.push('/servererror');
     });
 
-export const getSingleRecipe = id => (dispatch) => {
+export const getSingleRecipe = id => dispatch =>
   axios.get(`/getsinglerecipe/${id}`, {
     headers: { authorization: localStorage.getItem('token') },
   })
@@ -65,9 +65,8 @@ export const getSingleRecipe = id => (dispatch) => {
     .catch(() => {
       history.push('/servererror');
     });
-};
 
-export const deleteRecipe = id => (dispatch) => {
+export const deleteRecipe = id => dispatch =>
   axios.get(`/deleterecipe/${id}`, {
     headers: { authorization: localStorage.getItem('token') },
   })
@@ -81,4 +80,3 @@ export const deleteRecipe = id => (dispatch) => {
     .catch(() => {
       history.push('/servererror');
     });
-};

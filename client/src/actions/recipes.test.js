@@ -19,6 +19,8 @@ const mock = new MockAdapter(axios);
 const createMockStore = configureMockStore([thunk]);
 const store = createMockStore({});
 
+const historySpy = jest.spyOn(history, 'push');
+
 describe('recipes actions', () => {
   it('creates an action to show form', () => {
     const expectedAction = { type: SHOW_FORM };
@@ -36,6 +38,10 @@ describe('recipes actions', () => {
     describe('checkUrl', () => {
       beforeEach(() => {
         store.clearActions();
+      });
+
+      afterEach(() => {
+        localStorage.getItem.mockReset();
       });
 
       it('creates 2 async actions - FETCH_RECIPE and SHOW_FORM, if the server responds with recipe data', () => {
@@ -69,15 +75,13 @@ describe('recipes actions', () => {
     });
 
     describe('addRecipe', () => {
-      let historySpy;
-
       beforeEach(() => {
-        historySpy = jest.spyOn(history, 'push');
         store.clearActions();
       });
 
       afterEach(() => {
         historySpy.mockReset();
+        localStorage.getItem.mockReset();
       });
 
       it('creates an async action add a new recipe, if the server responds with recipe data', () => {
@@ -90,6 +94,7 @@ describe('recipes actions', () => {
         return store.dispatch(actions.addRecipe(mockRecipe)).then(() => {
           expect(store.getActions()).toEqual(expectedAction);
           expect(historySpy).toHaveBeenCalledWith('/recipes');
+          expect(localStorage.getItem).toHaveBeenCalledWith('token');
         });
       });
 
@@ -99,20 +104,19 @@ describe('recipes actions', () => {
 
         return store.dispatch(actions.addRecipe(mockRecipe)).then(() => {
           expect(historySpy).toHaveBeenCalledWith('/servererror');
+          expect(localStorage.getItem).toHaveBeenCalledWith('token');
         });
       });
     });
 
     describe('getRecipe', () => {
-      let historySpy;
-
       beforeEach(() => {
-        historySpy = jest.spyOn(history, 'push');
         store.clearActions();
       });
 
       afterEach(() => {
         historySpy.mockReset();
+        localStorage.getItem.mockReset();
       });
 
       it('creates an async action for getting recipes, if the server respons with recipes', () => {
@@ -128,6 +132,7 @@ describe('recipes actions', () => {
 
         return store.dispatch(actions.getRecipes()).then(() => {
           expect(store.getActions()).toEqual(expectedAction);
+          expect(localStorage.getItem).toHaveBeenCalledWith('token');
         });
       });
 
@@ -136,6 +141,85 @@ describe('recipes actions', () => {
 
         return store.dispatch(actions.getRecipes()).then(() => {
           expect(historySpy).toHaveBeenCalledWith('/servererror');
+          expect(localStorage.getItem).toHaveBeenCalledWith('token');
+        });
+      });
+    });
+
+    describe('getSingleRecipe', () => {
+      beforeEach(() => {
+        store.clearActions();
+      });
+
+      afterEach(() => {
+        historySpy.mockReset();
+        localStorage.getItem.mockReset();
+      });
+
+      it('creates an async action for getting recipes, if the server respons with recipes', () => {
+        const mockRecipeId = '1';
+        const mockSingleRecipe = { title: 'test recipe' };
+
+        mock
+          .onGet(`/getsinglerecipe/${mockRecipeId}`)
+          .reply(200, mockSingleRecipe);
+
+        const expectedAction = [
+          { type: GET_SINGLE_RECIPE, payload: mockSingleRecipe },
+        ];
+
+        return store
+          .dispatch(actions.getSingleRecipe(mockRecipeId))
+          .then(() => {
+            expect(store.getActions()).toEqual(expectedAction);
+            expect(localStorage.getItem).toHaveBeenCalledWith('token');
+          });
+      });
+
+      it('should push an error route to history object, if the server responds with an error', () => {
+        const mockRecipeId = '1';
+        mock.onGet(`/getsinglerecipe/${mockRecipeId}`).reply(401);
+
+        return store
+          .dispatch(actions.getSingleRecipe(mockRecipeId))
+          .then(() => {
+            expect(historySpy).toHaveBeenCalledWith('/servererror');
+            expect(localStorage.getItem).toHaveBeenCalledWith('token');
+          });
+      });
+    });
+
+    describe('deleteRecipe', () => {
+      beforeEach(() => {
+        store.clearActions();
+      });
+
+      afterEach(() => {
+        historySpy.mockReset();
+        localStorage.getItem.mockReset();
+      });
+
+      it('creates an async action for getting recipes, if the server respons with recipes', () => {
+        const mockRecipeId = '1';
+
+        mock.onGet(`/deleterecipe/${mockRecipeId}`).reply(200);
+
+        const expectedAction = [{ type: DELETE_RECIPE, payload: mockRecipeId }];
+
+        return store.dispatch(actions.deleteRecipe(mockRecipeId)).then(() => {
+          expect(store.getActions()).toEqual(expectedAction);
+          expect(historySpy).toHaveBeenCalledWith('/recipes');
+          expect(localStorage.getItem).toHaveBeenCalledWith('token');
+        });
+      });
+
+      it('should push an error route to history object, if the server responds with an error', () => {
+        const mockRecipeId = '1';
+        mock.onGet(`/deleterecipe/${mockRecipeId}`).reply(401);
+
+        return store.dispatch(actions.getRecipes()).then(() => {
+          expect(historySpy).toHaveBeenCalledWith('/servererror');
+          expect(localStorage.getItem).toHaveBeenCalledWith('token');
         });
       });
     });
