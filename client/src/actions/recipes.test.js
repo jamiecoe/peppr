@@ -217,7 +217,7 @@ describe('recipes actions', () => {
         const mockRecipeId = '1';
         mock.onGet(`/deleterecipe/${mockRecipeId}`).reply(401);
 
-        return store.dispatch(actions.getRecipes()).then(() => {
+        return store.dispatch(actions.deleteRecipe(mockRecipeId)).then(() => {
           expect(historySpy).toHaveBeenCalledWith('/servererror');
           expect(localStorage.getItem).toHaveBeenCalledWith('token');
         });
