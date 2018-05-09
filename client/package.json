@@ -42,6 +42,7 @@
     "react": "^16.2.0",
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.2.0",
+    "react-loadable": "^5.4.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
@@ -83,10 +84,11 @@
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)":
-        "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
-    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"],
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
@@ -101,7 +103,9 @@
     ]
   },
   "babel": {
-    "presets": ["react-app"]
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "airbnb",
@@ -109,25 +113,40 @@
       "react/jsx-filename-extension": [
         1,
         {
-          "extensions": [".js", ".jsx"]
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
         }
       ],
-      "react/prop-types": [0],
+      "react/prop-types": [
+        0
+      ],
       "import/no-named-as-default": 0,
       "jsx-a11y/anchor-is-valid": [
         "error",
         {
-          "components": ["Link"],
-          "specialLink": ["to"]
+          "components": [
+            "Link"
+          ],
+          "specialLink": [
+            "to"
+          ]
         }
       ],
       "class-methods-use-this": [
         "error",
         {
-          "exceptMethods": ["renderField", "renderStringToList"]
+          "exceptMethods": [
+            "renderField",
+            "renderStringToList"
+          ]
         }
       ],
-      "function-paren-newline": ["error", "consistent"]
+      "function-paren-newline": [
+        "error",
+        "consistent"
+      ]
     },
     "env": {
       "jest": true,
