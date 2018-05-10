@@ -4,7 +4,13 @@ exports[`Loading should render properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Loading />,
+  Symbol(enzyme.__unrendered__): <Loading
+    error={null}
+    isLoading={true}
+    pastDelay={false}
+    retry={[Function]}
+    timedOut={false}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -15,6 +21,249 @@ ShallowWrapper {
   Symbol(enzyme.__node__): null,
   Symbol(enzyme.__nodes__): Array [
     null,
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Loading when Loading has timed out should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Loading
+    error={null}
+    isLoading={true}
+    pastDelay={false}
+    retry={[Function]}
+    timedOut={true}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "Taking a long time... ",
+        <button
+          onClick={[Function]}
+>
+          Retry
+</button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      "Taking a long time... ",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Retry",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Retry",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "Taking a long time... ",
+          <button
+            onClick={[Function]}
+>
+            Retry
+</button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "Taking a long time... ",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Retry",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Retry",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Loading when delay is longer than your set delay should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Loading
+    error={null}
+    isLoading={true}
+    pastDelay={true}
+    retry={[Function]}
+    timedOut={false}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Loading...",
+    },
+    "ref": null,
+    "rendered": "Loading...",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Loading...",
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`Loading when there is an error on props should render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Loading
+    error="test error"
+    isLoading={true}
+    pastDelay={false}
+    retry={[Function]}
+    timedOut={false}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "Error! ",
+        <button
+          onClick={[Function]}
+>
+          Retry
+</button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      "Error! ",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Retry",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Retry",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "Error! ",
+          <button
+            onClick={[Function]}
+>
+            Retry
+</button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "Error! ",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Retry",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Retry",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
