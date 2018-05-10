@@ -1,5 +1,7 @@
 # Peppr
 
+![](https://travis-ci.org/jamiecoe/peppr.svg?branch=master)
+
 ## The Project
 Peppr is a recipe web application, allowing users to save recipes from popular recipe sites on the web so that they can view them easily.
 
